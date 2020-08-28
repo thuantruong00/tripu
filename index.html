@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripU</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">	
+    <link rel="stylesheet" href="asset/fontawesome/css/all.min.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="asset/setup.css">
+</head>
+<body>
+
+<div class="header-main">
+    <div class="container">
+        <span class="logo-wrap">
+            <img src="image/logo.png" alt="">
+        </span>
+        <span class="menu-wrap">
+            <ul>
+                <li><a href="#">Flight + Hotel</a></li>
+                <li><a href="#">Hotel & Home</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Todays Deales</a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </span>
+        <div class="user">
+            <a href="#" class="login">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                Log in
+            </a>
+            <a href="#" class="signup">Sign up</a>
+        </div>
+        <div class="option-box">
+            <label for="nation">
+                <div class="img">
+                    <img src="image/vietnam.png" alt="">
+                </div>
+            </label>
+            <select name="nation" id="nation" class="nation">
+                <option value="">Vietnam</option>
+            </select>
+            <select name="money" id="" class="money">
+                <option value="">VNĐ(đ)</option>
+            </select>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="banner-slider">
+    <div class="w-o1">
+        <img src="image/landing-top-img-1.png" alt="">
+    </div>
+    <div class="w-o2">
+        <img src="image/landing-top-img-4.png" alt="">
+    </div>
+    <div class="w-o3">
+        <img src="image/landing-top-img-2.png" alt="">
+    </div>
+    <div class="w-o4">
+        <img src="image/landing-top-img-9.png" alt="">
+    </div>
+    <div class="w-o5">
+        <img src="image/landing-top-img-3.png" alt="">
+    </div>
+    <div class="w-o6">
+        <img src="image/landing-top-img-8.png" alt="">
+    </div>
+    <div class="w-o7">
+        <img src="image/landing-top-img-10.png" alt="">
+    </div>
+    <div class="w-o8">
+        <img src="image/landing-top-img-5.png" alt="">
+    </div>
+    <div class="w-o9">
+        <img src="image/landing-top-img-6.png" alt="">
+    </div>
+    <div class="w-o10">
+        <img src="image/landing-top-img-7.png" alt="">
+    </div>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="text">
+                <h2>
+                    HOTELS, RESORTS,<br>HOSTELS & MORE
+                </h2>
+                <p>Get the best prices on 2,000,000+ properties, worldwide</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="text">
+                <h2>
+                    HOTELS, RESORTS,<br>HOSTELS & MORE
+                </h2>
+                <p>Get the best prices on 2,000,000+ properties, worldwide</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div style="position:absolute;width: 100%;">
+    <div class="text-center wrap-navs">
+        <div class="d-inline-block">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <img class="nav-img" src="image/hotel.png" alt="">
+                        Hotels & Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        <img class="nav-img" src="image/Group 15.png" alt="">
+                        Flight + Hotel
+
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                        <img class="nav-img" src="image/airline.png" alt="">
+                        Flight
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="wrap-form">
+                        <form action="">
+                            <label for="address" class="l-address">
+                                <input type="text" id="address" class="address">
+                                <img src="image/Group 558.png" alt="">
+                            </label>
+                            <div class="gap-xs"></div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="address" class="l-address">
+                                        <input type="date" id="date" class="address">
+                                    </label>
+                                </div>
+                                <div class="col-6">
+                                    <label for="address" class="l-address">
+                                        <input type="date" id="date2" class="address">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="gap-xs"></div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="user1" class="l-address">
+                                        <select name="" id="user1" class="address">
+                                            <option value="">2 adult</option>
+                                            <option value="">1 adult</option>
+                                        </select>
+                                        <img src="image/group.png" alt="">
+                                    </label>
+                                </div>
+                                <div class="col-6">
+                                    <label for="address" class="l-address">
+                                        <select name="" id="user1" class="address">
+                                            <option value="">2 adult</option>
+                                            <option value="">1 adult</option>
+                                        </select>
+                                        <img src="image/children.png" alt="">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="gap-xs"></div>
+                            <a href="#" class="btn-submit">search</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="wrap-form">
+                        <form action="">
+                            <label for="address" class="l-address">
+                                <input type="text" id="address" class="address">
+                                <img src="image/Group 558.png" alt="">
+                            </label>
+                            <div class="gap-xs"></div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="address" class="l-address">
+                                        <input type="date" id="date" class="address">
+                                    </label>
+                                </div>
+                                <div class="col-6">
+                                    <label for="address" class="l-address">
+                                        <input type="date" id="date2" class="address">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="gap-xs"></div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="user1" class="l-address">
+                                        <select name="" id="user1" class="address">
+                                            <option value="">2 adult</option>
+                                            <option value="">1 adult</option>
+                                        </select>
+                                        <img src="image/group.png" alt="">
+                                    </label>
+                                </div>
+                                <div class="col-6">
+                                    <label for="address" class="l-address">
+                                        <select name="" id="user1" class="address">
+                                            <option value="">2 adult</option>
+                                            <option value="">1 adult</option>
+                                        </select>
+                                        <img src="image/children.png" alt="">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="gap-xs"></div>
+                            <a href="#" class="btn-submit">search</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="wrap-form">
+                        <form action="">
+                            <label for="address" class="l-address">
+                                <input type="text" id="address" class="address">
+                                <img src="image/Group 558.png" alt="">
+                            </label>
+                            <div class="gap-xs"></div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="address" class="l-address">
+                                        <input type="date" id="date" class="address">
+                                    </label>
+                                </div>
+                                <div class="col-6">
+                                    <label for="address" class="l-address">
+                                        <input type="date" id="date2" class="address">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="gap-xs"></div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="user1" class="l-address">
+                                        <select name="" id="user1" class="address">
+                                            <option value="">2 adult</option>
+                                            <option value="">1 adult</option>
+                                        </select>
+                                        <img src="image/group.png" alt="">
+                                    </label>
+                                </div>
+                                <div class="col-6">
+                                    <label for="address" class="l-address">
+                                        <select name="" id="user1" class="address">
+                                            <option value="">2 adult</option>
+                                            <option value="">1 adult</option>
+                                        </select>
+                                        <img src="image/children.png" alt="">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="gap-xs"></div>
+                            <a href="#" class="btn-submit">search</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="under-slide">
+    <img class="w-o11" src="image/Path 10755.png" alt="">
+    <img class="w-o12"  src="image/Path 96.png" alt="">
+    <img class="w-o13"  src="image/Path 97.png" alt="">
+    
+</div>
+
+
+
+
+</body>
+</html>
+<script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>

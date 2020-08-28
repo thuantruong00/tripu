@@ -1,0 +1,117 @@
+.footer1{
+    background: #464c55;
+}
+.footer1 .logo-ft{
+    width: 100px;
+    display: block;
+}
+.footer1 .logo-ft img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-detail .text{
+    font-size: 14px;
+    color: #fff;
+    margin-left: 40px;
+}
+.info-detail .img{
+    float: left;
+    height: 40px;
+    vertical-align: middle;
+}
+.form-ft form{
+    position: relative;
+    display: block;
+}
+.form-ft input{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 50px 10px 50px;
+}
+.form-ft input:focus,
+.btn-send-email:focus{
+    outline: none;
+}
+.btn-send-email{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+}
+
+.icon-mail-o{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.list-link a{
+    display: block;
+    margin: 10px 0px;
+    color: #fff;
+}
+.list-link a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.list-link-icon img{
+    width: 50px;
+    object-fit: cover;
+}
+.list-link-icon a{
+    margin-right: 5px;
+}
+.img-app{
+    max-width: 150px;
+}
+.img-app img{
+    width: 100%;
+}
+.fix-img{
+    width: 40px;
+}
+.fix-img1{
+    width: 100px;
+}
+
+
+.footer-absolute{
+    padding: 10px 20px;
+}
+@media only screen and (max-width:500px){
+   .footer-absolute{
+       font-size: 10px;
+   } 
+   .footer-absolute .col-6{
+        padding: 0;
+        text-align: center!important;
+   }
+   .footer1 p.c-white {
+    font-size: 12px;
+    }  
+   .list-link a{
+       font-size: 10px;
+   }
+   .fix-img{
+       width: 30px;
+   }
+   .fix-img1{
+       width: 75px;
+   }
+   .img-app img{
+       width: 80%;
+   }
+   .list-link-icon img{
+       width: 35px;
+   }
+
+}

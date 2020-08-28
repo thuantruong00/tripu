@@ -1,0 +1,45 @@
+.title{
+    position: relative;
+    margin: 0;
+}
+.title p{
+    text-transform: uppercase;
+    color: #464C55;
+    font-size: 23px;
+    font-weight: 600;
+    margin: 0;
+}
+.title>a{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    display: inline-block;
+    color: #464C55;
+}
+.view-all{
+    font-size: 14px;
+    font-weight: 600;
+}
+.view-all>i{
+    margin-left: 10px;
+}
+.view-all:hover{
+    color: #464C55;
+    text-decoration: none;
+}
+@media only screen and(max-width:991px){
+
+}
+@media only screen and (max-width:767px){
+    .title p{
+        font-size: 18px;
+    }
+    .title>a{
+        top: 2px;
+        font-size: 14px;
+    }
+    .br-mobile{
+        display: block!important;
+        position: static!important;
+    }
+}

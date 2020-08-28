@@ -1,0 +1,96 @@
+ /*-- mega menu --*/
+.mega-menu{
+    padding: 13px 0px;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+} 
+.mega-menu ul{
+    margin: 0!important;
+}
+.mega-menu li{
+    display: block;
+}
+.mega-menu li a{
+    display: block;
+    color: #5D626A;
+    padding: 14px 20px;
+}
+.mega-menu >ul>li:hover{
+    background: #ECEDED;
+}
+.mega-menu li a:hover{
+    text-decoration: none;
+}
+.mega-menu li i{
+    float: right;
+    position: relative;
+    top: 5px;
+}
+/*------------------------------------------*/
+.box-mega-menu{
+    display: none;
+    position: absolute;
+    left: 250px;
+    top: 0;
+    width: 900px;
+    height: 550px;
+    z-index: 99;
+    background-color: none;
+    padding-left: 60px;
+}
+.animation-right{
+    animation: mega-sub 0.4s;
+}
+.box-mega-menu>div{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    opacity: 1;
+}
+.mega-sub-list a:hover{
+    font-weight: 600!important;
+    text-decoration: underline!important;
+}
+.mega-menu li:hover .box-mega-menu{
+    display: block;
+}
+@keyframes mega-sub{
+    from{
+        opacity: 0.1;
+        left: 220px;
+    }
+    to{
+        opacity: 1;
+        left: 250px;
+    }
+}
+/*---- mega sub item ---*/
+.mega-sub-list ul li:first-child a{
+    color: red;
+    font-weight: 600;
+}
+.my-col-3{
+    display: inline-block;
+    width: 33.33%;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.mega-menu .active{
+    background: #ECEDED; 
+    font-weight: 600;
+}
+
+/*---------------mobile tablet--------------*/
+
+@media only screen and (max-width:991px){
+
+}
+@media only screen and (max-width:767px){
+    
+}
+@media only screen and (max-width:500px){
+    
+}

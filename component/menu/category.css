@@ -1,0 +1,126 @@
+.category{
+    border: none;
+    background: none;
+}
+.category:focus{
+    border: none;
+    outline: none;
+}
+.my-col-2{
+    display: inline-block;
+    width:50%;
+    padding:0;
+    margin: 0;
+}
+.style-category{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 50px;
+    left: 0;
+    animation: toUp2 0.5s;
+    box-shadow: 0px 0px 30px 1px rgba(0,0,0,.3);
+}
+@keyframes toUp2{
+    from{
+        top:80px
+    }
+    to{
+        top:50px
+    }
+}
+.style-category ul>li{
+    width: 450px;
+    position: relative;
+}
+.angle-up{
+    transform: rotateZ(180deg);
+}
+.box-category-menu{
+    animation: toRight 0.4s;
+    left: 410px;
+    opacity: 1;
+    width: 600px;
+}
+
+@media only screen and (min-width:991px){
+    @keyframes toRight{
+        from{
+            left: 400px;
+            opacity: 0;
+        }
+        to{
+            left: 410px;
+            opacity: 1;
+        }
+    }
+}
+@media only screen and (max-width:991px){
+    .style-category-mb{
+        position: absolute;
+        width: 90%;
+        display: none;
+        z-index: 99;
+        top: 50px;
+        animation: toUp2 0.5s;
+        box-shadow: 0px 0px 30px 1px rgba(0,0,0,.3);
+
+    }
+
+    .style-category-mb a{
+        display: inline-block!important;
+        width: 80%!important;
+        margin: 0;
+    }
+    .style-category-mb button{
+        float: right;
+        display: inline-block;
+        width: 15%!important;
+        border: none;
+        outline: none;
+        background: none;
+        padding:5px 10px;
+    }
+    .toggle-mb{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        background: #fff;
+        width: 100%;
+        z-index: 200;
+    }
+    .my-col-12 button{
+        width: 100%!important;
+        display: block;
+        margin:0;
+        padding: 0;
+        padding-left: 10px;
+    }
+    .sub-menu-mbx i{
+        top: 3px!important;
+        margin-right: 10px;
+    }
+    .box-category-menu{
+        padding: 10px;
+        box-shadow: 0px 0px 30px 1px rgba(0,0,0,.3);
+        border-radius: 10px;
+    }
+    .style-category-mb li a{
+        padding:5px;
+        padding-left: 10px;
+        display: block;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px){
+    .sub-menu-mbx, .my-col-12 {
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+    }
+    .style-category-mb li a{
+        font-size: 12px;
+    }
+
+}

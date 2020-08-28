@@ -1,0 +1,170 @@
+.header-top{
+	position: relative;
+	width: 100%;
+	display: block;
+    background: #fff;
+    padding: 5px 0px;
+	border-bottom: 2px solid #F6F7F7;
+	color: #fff;
+}
+.icon-social, .phone-num{
+	display: inline-block;
+}
+.phone-num{
+	padding: 5px 0px;
+}
+.icon-social a{
+	display: inline-block;
+	width: 32px;
+	padding: 0;
+	margin: 0;
+}
+.icon-social a img{
+    width: 100%;
+}
+.language{
+	display: inline-block;
+}
+.language img{
+	width: 28px;
+}
+.header-top .language select{
+	border: none;
+	background: none;
+	color: #545A62;
+	outline: none;
+	font-size: 14px;
+}
+.header-top .language option{
+	color: #000;
+	font-size: 14px;
+}
+.phone-num span{
+	font-size: 14px;	
+}
+/*-------------------*/
+
+.logo{
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+.logo img{
+    width: 80px;
+}
+
+.header-main{
+    background: #fff;
+    padding: 20px 0px;
+}
+.header-main .form-search{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.header-main .form-search input{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background: #F6F6F6;
+    height: 40px;
+    padding-left: 50px;
+}
+.header-main .form-search button{
+    position: absolute;
+    border: none;
+    background: none;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 5px 0px 0px 5px;
+}
+.header-main .form-search input:focus{
+    outline: none;
+}
+.right-block{
+    display: inline-block;
+    width: 49%;
+    margin: 0;
+}
+.right-block img{
+    width: 50px;
+    float: left;
+}
+#btn-cart:hover{
+	cursor: pointer;
+}
+.right-block:hover{
+	text-decoration: none;
+	color: #5D626A;
+}
+
+
+
+/*-- my col --*/
+.my-col{
+	
+}
+.padding-0{
+	padding: 0;
+}
+.m-border-r{
+	position: relative;
+}
+.m-border-r::after{
+	content: '';
+	position: absolute;
+	top: 15%;
+	right: 0;
+	height: 70%;
+	border-right: 2px solid #dedede;
+}
+/*header-mb*/
+@media only screen and (max-width: 991px){
+	.phone-num span{
+		font-size: 12px;	
+	}
+
+
+} 
+@media only screen and (max-width: 767px){
+	.my-col{
+		padding: 0px;
+		margin: 0;
+	}
+	.header-top .language select{
+		font-size: 12px;
+	}
+	.header-top .language option{
+		font-size: 12px;
+	}
+	.form-search input::placeholder{
+		font-size: 12px;
+	}
+
+}
+@media only screen and (max-width: 500px){
+	.phone-num span{
+		font-size: 8px;	
+	}
+	.icon-social a{
+		width: 16px;
+		padding: 5px 0px;
+	}
+	.language img{
+		width: 16px;
+		padding: 10px 0px;
+	}
+	.form-search input::placeholder{
+		font-size: 12px;
+	}
+	.header-main .form-search{
+		left: 6px;
+		top: 5px;
+	}
+	.header-main .form-search input{
+		padding-left: 43px;
+	}
+	.header-main .form-search button {
+		padding: 0 14px;
+	}
+}

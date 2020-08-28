@@ -1,0 +1,41 @@
+.breadcrumb ul>li{
+    float: left;
+    display: inline-block;
+}
+.breadcrumb ul>li a{
+    display: block;
+    color: #B6B8BC;
+    margin-right: 10px;  
+    font-weight: 300;
+    font-size: 14px;
+}
+.breadcrumb ul>li a:hover{
+    text-decoration: none;
+}
+.breadcrumb ul>li i{
+    color: #B6B8BC; 
+    margin-right: 10px;
+}
+.breadcrumb ul li:last-child a{
+    color: #696969;
+    font-weight: 600;
+}
+.breadcrumb{
+    background: #F7F7F7;
+    margin: 0;
+    padding: 15px 0px;
+}
+.breadcrumb ul{
+    display: block;
+    margin: 0px 15px;
+}
+@media only screen and (max-width:991px){
+    .breadcrumb ul>li a{
+        font-size: 12px;
+    }
+    .breadcrumb ul>li i{
+        font-size: 12px;
+        position: relative;
+        top: -3px;
+    }
+}
