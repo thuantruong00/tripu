@@ -1,0 +1,80 @@
+.card-trip{
+    box-shadow:0px 0px 6px 1px rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+    border: 0;
+}
+.card-trip .rate-star img{
+    width: 15px;
+}
+.card-trip .rate-star{
+    padding-right: 5px;
+}
+.card-trip .location{
+    border-left: 1px solid gray;
+    padding-left: 10px;
+}
+.card-trip-title{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.card-trip .rate-point .point{
+    position: relative;
+    top: -37px;
+    left: 9px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+.card-trip .review-number{
+    font-size: 10px;
+}
+.card-trip .sale-off{
+    background-color: red;
+    color: white;
+}
+.line-through{
+    display: inline;
+    font-size: 8px;
+    text-decoration-line: line-through;
+}
+
+@media only screen and (max-width:500px){
+    .card-trip{
+        margin-bottom: 10px;
+        box-shadow:0px 0px 0px 0px rgba(0, 0, 0, 0.178);
+        border-radius: 0px;
+        border: 1px solid rgba(128, 128, 128, 0.384);
+    }
+    .card-trip .card-img-top{
+        height: 126px;
+    }
+    .card-trip .rate-star img{
+        vertical-align: initial;
+        width: 12px;
+        height: 14px;
+        margin-left: -4px;
+    }
+    .card-trip .location img{
+        width: 11px;
+
+    }
+    .card-trip .location {
+        height: 19px;
+        padding-left: 5px;
+    }
+    .card-trip .rate-point img{
+        width: 25px;
+    }
+    .card-trip .rate-point .point {
+        position: relative;
+        font-size: 12px;
+        top: -29px;
+        left: 5px;
+        font-weight: bold;
+        color: white;
+        display: inline-block;
+    }
+    .card-trip .review-number {
+        font-size: 5px;
+    }
+}
