@@ -1,0 +1,139 @@
+
+.owl-nav .owl-prev{
+    position: absolute;
+    left: 0;
+    height: 100px;
+}
+.owl-dots{
+    position: absolute;
+    z-index: 99;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+.owl-dots button{
+    border:3px solid #E3E3E3!important; 
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    border-radius: 60px;
+}
+.owl-dots .active{
+    background:#F7971E!important;
+    border-color: #F7971E!important;
+}
+.owl-nav{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-100%);
+}
+.owl-nav button{
+    width: 50px;
+    height: 50px!important;
+    color: #707070;
+    background:rgba(255,255,255,.7)!important;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.4s;
+    position: relative;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 10px 1px #dedede;
+}
+
+.owl-nav .owl-prev{
+    position: absolute;
+    left:20px;
+    z-index: 999;
+}
+.owl-nav .owl-next{
+    position: absolute;
+    z-index: 999;
+    right:20px;
+}
+.owl-nav .owl-prev span{
+    font-size: 40px;
+    position: absolute;
+    transform: translate(-76%,-49%);
+}
+.owl-nav .owl-next span{
+    font-size: 40px;
+    position: absolute;
+    transform: translate(-20%,-49%);
+}
+
+
+/*---------------slider-2----------------*/
+.slider-2 .owl-item{
+    position: relative;
+    top: 25%;
+    z-index: 0;
+}
+.slider-2 .owl-item img{
+    transform: scale(1);
+    transition: all 0.8s;
+}
+/* .slider-2 .center+.active img{
+    transform: scale(1.5);
+} */
+.slider-2 .active img{
+    transform: scale(1);
+}
+.slider-2 .owl-stage>.active:first-child img{
+    margin-right: 20px!important;
+    z-index: 99!important;
+    transform: scale(2)!important;
+}
+.slider-2 .center img{
+    transform: scale(2);
+    z-index: 99;
+    
+}
+.slider-2 .center{
+    z-index: 99;
+}
+.slider-2 .center+.owl-item{
+    z-index: 90;
+}
+.slider-2 button {
+    display: none;
+}
+#num2{
+    margin: auto;
+}
+#num2 .owl-stage-outer,
+#num2 .owl-stage-outer .owl-stage{
+    height: 100%;
+}
+
+
+
+/*------------------------------*/
+@media only screen and (max-width:991px){
+    .slider-basic .owl-item img{
+        transform: scale(1.5);
+        transition: all 0.8s;
+    }
+    .slider-basic .center img{
+        transform: scale(2);
+        z-index: 99;
+        
+    }
+    .slider-basic .center{
+        z-index: 99;
+    }
+    .slider-basic button {
+        display: none;
+    }
+    #num1{
+        margin: auto;
+    }
+    #num1 .owl-stage-outer,
+    #num1 .owl-stage-outer .owl-stage{
+        height: 100%;
+    }
+    .slider-basic .owl-item{
+        position: relative;
+        top: 25%;
+    }
+}

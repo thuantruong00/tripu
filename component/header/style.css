@@ -1,170 +1,115 @@
-.header-top{
-	position: relative;
-	width: 100%;
-	display: block;
-    background: #fff;
-    padding: 5px 0px;
-	border-bottom: 2px solid #F6F7F7;
-	color: #fff;
-}
-.icon-social, .phone-num{
-	display: inline-block;
-}
-.phone-num{
-	padding: 5px 0px;
-}
-.icon-social a{
-	display: inline-block;
-	width: 32px;
-	padding: 0;
-	margin: 0;
-}
-.icon-social a img{
-    width: 100%;
-}
-.language{
-	display: inline-block;
-}
-.language img{
-	width: 28px;
-}
-.header-top .language select{
-	border: none;
-	background: none;
-	color: #545A62;
-	outline: none;
-	font-size: 14px;
-}
-.header-top .language option{
-	color: #000;
-	font-size: 14px;
-}
-.phone-num span{
-	font-size: 14px;	
-}
-/*-------------------*/
-
-.logo{
-	width: 100%;
-	text-align: center;
-	display: block;
-}
-.logo img{
-    width: 80px;
-}
-
-.header-main{
-    background: #fff;
-    padding: 20px 0px;
-}
-.header-main .form-search{
-    width: 100%;
+.menu-wrap ul li{
+    list-style-type: none;
     display: inline-block;
-    position: relative;
+    float: left;
+    margin-right: 5px;
 }
-.header-main .form-search input{
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    background: #F6F6F6;
-    height: 40px;
-    padding-left: 50px;
+.menu-wrap ul li a{
+    display: block;
+    color: #000;
+    font-weight: 600;
+    padding: 5px 10px;
 }
-.header-main .form-search button{
-    position: absolute;
-    border: none;
-    background: none;
-    height: 40px;
-    padding: 0 20px;
-    border-radius: 5px 0px 0px 5px;
+.menu-wrap ul li:last-child a{
+    color: #707070;
 }
-.header-main .form-search input:focus{
-    outline: none;
+.menu-wrap ul li a:hover{
+    text-decoration: none;
 }
-.right-block{
-    display: inline-block;
-    width: 49%;
-    margin: 0;
-}
-.right-block img{
-    width: 50px;
+.menu-wrap, .logo-wrap{
     float: left;
 }
-#btn-cart:hover{
-	cursor: pointer;
+.option-box, .user{
+    float: right;
 }
-.right-block:hover{
-	text-decoration: none;
-	color: #5D626A;
+.user a {
+    color:#000;
+    font-weight: 600;
+    display: inline-block;
 }
-
-
-
-/*-- my col --*/
-.my-col{
-	
+.logo-wrap img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
-.padding-0{
-	padding: 0;
+.logo-wrap{
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
 }
-.m-border-r{
-	position: relative;
+.option-box label img{
+    width: 24px;
 }
-.m-border-r::after{
-	content: '';
-	position: absolute;
-	top: 15%;
-	right: 0;
-	height: 70%;
-	border-right: 2px solid #dedede;
+.option-box select{
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
 }
-/*header-mb*/
-@media only screen and (max-width: 991px){
-	.phone-num span{
-		font-size: 12px;	
-	}
-
-
-} 
-@media only screen and (max-width: 767px){
-	.my-col{
-		padding: 0px;
-		margin: 0;
-	}
-	.header-top .language select{
-		font-size: 12px;
-	}
-	.header-top .language option{
-		font-size: 12px;
-	}
-	.form-search input::placeholder{
-		font-size: 12px;
-	}
-
+.option-box{
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+    padding-right: 10px;
 }
-@media only screen and (max-width: 500px){
-	.phone-num span{
-		font-size: 8px;	
-	}
-	.icon-social a{
-		width: 16px;
-		padding: 5px 0px;
-	}
-	.language img{
-		width: 16px;
-		padding: 10px 0px;
-	}
-	.form-search input::placeholder{
-		font-size: 12px;
-	}
-	.header-main .form-search{
-		left: 6px;
-		top: 5px;
-	}
-	.header-main .form-search input{
-		padding-left: 43px;
-	}
-	.header-main .form-search button {
-		padding: 0 14px;
-	}
+.option-box::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    background:rgba(0,0,0,.16);
+    width: 1px;
+    bottom:0;
+    right: 0;
+}
+.user{
+    display: inline-block;
+}
+.header-main a{
+    font-size: 14px;
+}
+.signup{
+    color: #fff!important;
+    background:#243C93;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.signup:hover,
+.login:hover{
+    text-decoration: none;
+}
+.fa-sign-in:before {
+    content: "\f090";
+    font-size: 16px;
+}
+.header-main{
+    padding: 10px 0px;
+    padding-top: 20px;
+}
+.clear {
+    clear: both;
+}
+@media only screen and ( max-width:991px){
+    .header-main{
+        background-image: linear-gradient(#4E81FF , #E8EEFF);
+    }
+    .header-main .user,
+    .header-main .nav-bars{
+        display: inline-block;
+        float: right;
+        margin-left: 10px;
+    }
+    .header-main .nav-bars{
+        border: none;
+        background: none;
+        position: relative;
+        top: -1px;
+    }
+    .header-main a {
+        font-size: 12px;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 10px 2px;
+    }
 }
