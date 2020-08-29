@@ -79,15 +79,17 @@
 .slider-2 .active img{
     transform: scale(1);
 }
-.slider-2 .owl-stage>.active:first-child img{
-    margin-right: 20px!important;
-    z-index: 99!important;
-    transform: scale(2)!important;
+.slider-2 .center + .active img{
+    transform: scale(1.5);
 }
 .slider-2 .center img{
     transform: scale(2);
     z-index: 99;
     
+}
+.c-scale{
+    transform: scale(1.5)!important;
+    z-index: 90;
 }
 .slider-2 .center{
     z-index: 99;

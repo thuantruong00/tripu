@@ -933,6 +933,29 @@
         $('#num2').css('height',temp3);
         
 
+flag  = 0 ;
+
+$('#num2').mousedown((event)=>{
+    console.log(event.pageX);
+    flag=1;
+});
+$(window).mouseup((event)=>{
+    if(flag==1){
+        console.log(event.pageX);
+        //$('.center').prev().find('img').addClass('c-scale');
+        a = $('.center').prev();
+        console.log(a);
+        b = $(a).find('img');
+        $('#num2 img').removeClass('c-scale');
+        $(b[1]).addClass('c-scale');
+        console.log(b[1]);
+        
+    }
+    flag=0;
+    
+});
+
+
 
     });
 
