@@ -177,10 +177,12 @@ ul{
 }
 .pay-method-item{
     width: 10%;
+    margin: auto;
 }
 .pay-method img{
     height: 30px;
-
+    display: block;
+    width: 100%;
 }
 .footer-mid select{
     background-color: rgba(255, 255, 255, 0);
@@ -226,8 +228,9 @@ img.footer-icon{
         flex-wrap: wrap;
     }
     .pay-method-item{
-        width: 25%;
-        padding: 5px 5px 5px 0;
+        width: 12%;
+        padding: 0px;
+        max-width: 10px;
     }
     .pay-method-item img{
         height: 25px;
