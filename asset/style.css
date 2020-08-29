@@ -57,6 +57,9 @@ h1, h2, h3, h4, h5, h6{
 .small-size{
     font-size: 16px!important;
 }
+.xsmall-size{
+    font-size: 13px!important;
+}
 /* @media only screen and (min-width:1200px){
     .container{
         max-width: 1300px!important;
@@ -66,10 +69,13 @@ h1, h2, h3, h4, h5, h6{
     .mg-pd-none-mb{
         padding: 0;
     }
+    .xsmall-size{
+        font-size: 9px!important;
+    }
     .small-size{
         font-size: 12px!important;
     }
-    .normal-size{
+    .medium-size{
         font-size: 14px!important;
     }
     .large-size{

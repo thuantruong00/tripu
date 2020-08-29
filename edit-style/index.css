@@ -428,6 +428,22 @@
 .rating{
     padding: 5px 10px;
 }
+
+
+
+
+
+.list-title{
+    font-weight: bold;
+}
+.list-title hr{
+    border-top: 2px solid #2266FF;
+    margin: 0 30% 10px 30%;
+}
+.slider-hotel-list .owl-dots {
+    display: none;
+}
+
 @media only screen and (max-width:767px){
     .grid-container{
         grid-template-columns:auto;
@@ -451,6 +467,20 @@
     .banner-content{
         text-align: center;
         font-size: 30px;
+
     }
 
+}
+@media only screen and (max-width:500px){
+    .hotel-list{
+        background-color: #E9EFFF;
+        min-height: 430px;
+    }
+    .list-title{
+        background-color: white;
+    }
+    .slider-hotel-list .owl-dots {
+        display: block;
+        bottom: -17px;
+    }
 }
