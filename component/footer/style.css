@@ -121,11 +121,16 @@ a{
     text-decoration: none;
     color: unset;
 }
+a:hover{
+    text-decoration: none;
+    color: unset;
+}
 ul{
     list-style: none;
 }
 .footer hr{
     border-top: 0.7px solid #707070;
+    margin-top: 0;
 }
 .footer{
     font-family: 'Josefin Sans', sans-serif;
@@ -189,6 +194,9 @@ ul{
     border: none;
     color: white;
 }
+.slt-currency select{
+    vertical-align: sub;
+}
 
 /* footer bottom */
 .footer-bot{
@@ -228,9 +236,8 @@ img.footer-icon{
         flex-wrap: wrap;
     }
     .pay-method-item{
-        width: 12%;
+        width: 11%;
         padding: 0px;
-        max-width: 10px;
     }
     .pay-method-item img{
         height: 25px;
