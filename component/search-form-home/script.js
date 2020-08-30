@@ -4,16 +4,19 @@ $(document).ready(function(){
                 v=$(this).find('.i-user').attr('value');
                 // console.log(v);  
                 u=$(this).find('.i-room').attr('value');
-                console.log(u);            
                 $('#result-select .num-user').text(v);
                 $('#result-select .num-room').text(u);
             
         });
     });
 
-    $('#dropdownMenuLink').click(function(){
-        $('.my-dropdown-menu').toggleClass('d-none');
+    $('.dropdownMenuLink').each(function(index,element){
+        $(element).click(function(event){
+            q=$('.my-toggle');
+            $(q[index]).toggleClass('d-none');
+        });
     });
+
     $('.down').click(function(){
         printnum = $(this).next('.num-result').attr('value');
         direct= '#result-select';
@@ -27,7 +30,6 @@ $(document).ready(function(){
         }else{
             printnum = (printnum<=1)?1:printnum;
         }
-        console.log(direct);
         $(direct).text(printnum);
         $(this).next('.num-result').attr('value',printnum);
         $(this).next('.num-result').text(printnum);

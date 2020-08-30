@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('#num0').owlCarousel({
     loop:true,
-    margin:10,
+    margin:0,
     nav:true,
     navText:['<span>&#x3008;</span>','<span>&#x3009;</span>'],
     responsive:{
@@ -71,7 +71,23 @@ $(document).ready(function(){
             }
         }
     });
-
+    $('#num4').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            991:{
+                items:3
+            }
+        }
+    })
 
 
     

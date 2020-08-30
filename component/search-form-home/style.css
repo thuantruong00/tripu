@@ -120,12 +120,64 @@
 .menu-wrap .sm-title{
     left:10px;
 }
-.wrap-form .bg-history select{
+.wrap-form .bg-history{
     background: #f9f9f9;
 }
 .wrap-form select+img{
     width: 15px;
     transform: translateY(20%);
+}
+.bg-history{
+    padding: 14px;
+    position: relative;
+}
+.toggle-history{
+    display: block;
+    position: relative!important;
+    top: 0;
+}
+.bg-history img{
+    display: inline-block;
+    height: 15px;
+    margin-right: 10px;
+}
+.bg-history button{
+    display: block;
+    text-align: left;
+    border: none;
+    width: 100%;
+    position: relative;
+    background: none;
+}
+.bg-history .icon{
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    font-size: 20px;
+    transform: rotate(45deg)!important;
+    transition: all 0.4s;
+}
+.bg-history :focus-within .icon{
+    transform: rotate(270deg)!important;
+}
+
+.toggle-history ul {
+    list-style: none;
+    display: block;
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+.my-toggle{
+    opacity: 1;
+    animation: animateToggle 0.7s;
+}
+@keyframes animateToggle{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 /*--------------------------------------*/
 
@@ -181,17 +233,13 @@
     transform: translateY(-50%);
 }
 
-.wrap-form-opt-room input{
-    display: none;
-}
-/* .wrap-form-opt-room{
-    margin-top: 10px;
-} */
+
 .wrap-form-opt-room>ul{
     display: block;
     margin-top:10px ;
 }
-.wrap-form-opt-room>ul>li{
+.wrap-form-opt-room>ul>li,
+.wrap-form-opt-room ul ul>li:first-child>div{
     padding-top: 5px;
     padding-bottom: 5px;
     border-bottom: 1px solid #bebebe;
@@ -220,7 +268,7 @@
     right: 10px;
 }
 .my-dropdown-menu{
-    width: 100%;
+    width: 80%;
     padding: 0px 10px;
     z-index: 99;
     background: #fff;
@@ -232,30 +280,71 @@
 .opt-menu .opt-menu-wrap{
     display: none;
     position: absolute;
-    left: 90%;
+    left: 96%;
     top: 0;
     z-index: 0;
     animation: toRight 0.4s;
 }
+.opt-menu-wrap .content{
+    padding-right: 30px;
+    position: relative;
+}
+.opt-menu-wrap .content i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+}
+.opt-menu-wrap .special{
+    border: 1px solid #5392F9;
+    padding: 5px;
+}
+.opt-menu-wrap .special i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.opt-menu-wrap .special span{
+    color: #838383;
+}
+.opt-menu-wrap .special .new{
+    float: right;
+    background: #E12D2D;
+    color: #fff;
+    padding: 1px 3px;
+    border-radius: 3px;
+}
+.opt-menu-wrap .special .link{
+    border: 1px solid #5392F9;
+    color: #5392F9;
+    padding: 5px 10px;
+}
+.check2 input{
+    display: inline-block;
+    margin-right: 5px;
+}
+.check2{
+    position: absolute;
+    bottom: 0;
+}
 @keyframes toRight{
     from{
-        left: 80%;
+        left: 85%;
     }
     to{
-        left: 90%;
+        left: 96%;
     }
 }
 .opt-menu:hover .opt-menu-wrap{
     display: block;
 }
 .opt-menu-wrap{
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .opt-menu-wrap ul{
     display: block;
-    width: 200px;
+    width: 235px;
     background: #fff;
-    height: 120px;
+    min-height: 200px;
     padding: 10px;
     box-shadow: 0px 0px 10px 1px #bebebe;
 }
@@ -274,12 +363,51 @@
 .my-dropdown-menu .up{
     position: absolute;
     right: 10px;
+    font-size: 30px;
+    line-height: 15px;
+    color: #5392F9;
 }
 .my-dropdown-menu .down{
     position: absolute;
-    left: 50px;
+    left: 30px;
+    font-size: 40px;
+    line-height: 20px;
+    color: #5392F9;
 }
-.num-result,
-.num-result +span{
-    color:#838383!important;
+.num-result{
+    color:#5392F9!important;
+}
+.num-result + span{
+    color: #838383!important;
+}
+@media only screen and (max-width:991px){
+    .result-mobile{
+        width: 100%;
+        margin: 0;
+        margin-top: 7px;
+    }
+    .opt-menu-wrap-mobile ul{
+        min-height: 0!important;
+        width: 100%!important;
+        left: 0;
+        margin: 0;
+    }
+    .opt-menu-wrap-mobile{
+        padding:0;
+        position: relative;
+    }
+    .opt-menu-wrap-mobile .up{
+        position: absolute;
+        right:20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+    .opt-menu-wrap-mobile .down{
+        position: absolute;
+        padding-left: 10px;
+        padding-right: 10px;
+        left:20px;
+        cursor: pointer;
+    }
 }

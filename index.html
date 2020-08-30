@@ -81,6 +81,7 @@
         </span>
 
         <!----form---->
+        <div class="clear"></div>
         <div class="wrap-form-search-mb d-lg-none">
             <div class="text-center wrap-navs">
                 <div class="d-inline-block">
@@ -167,32 +168,63 @@
                                         </div>
                                     </div>
                                     <div class="gap-xs"></div>
-                                    <div class="bg-w">
+                                    <button type="button" class="bg-w result-select result-mobile border-0 dropdownMenuLink" id="result-select">
                                         <div class="gap-xs"></div>
                                         <span class="c-dark mr-2">
-                                            <span class="c-main">1</span>
-                                            <small>Phòng</small>
+                                            <span class="c-main num-room">1</span>
+                                            <span>Phòng</span>
                                         </span>
                                         <span class="c-dark mr-2">
-                                            <span class="c-main">2</span>
-                                            <small>Người lớn</small>
+                                            <span class="c-main num-user">2</span>
+                                            <span>Người lớn</span>
                                         </span>
                                         <span class="c-dark mr-2">
-                                            <span class="c-main">0</span>
-                                            <small>Trẻ em</small>
+                                            <span class="c-main num-child">0</span>
+                                            <span>Trẻ em</span>
                                         </span>
                                         <div class="gap-xs"></div>
+                                    </button>
+                                    <div  class="opt-menu-wrap opt-menu-wrap-mobile my-toggle d-none">
+                                        <ul>
+                                            <li>
+                                                <div class="setup-select-child text-center">
+                                                    <div class="down">-</div>
+                                                    <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                    <span>phòng</span>
+                                                    <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                </div>
+                                                <div class="setup-select-user text-center">
+                                                    <div class="down">-</div>
+                                                    <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                    <span>người lớn</span>
+                                                    <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                </div>
+                                                <div class="setup-select-room text-center">
+                                                    <div class="down">-</div>
+                                                    <span class="num-result" direct=".num-child" value='0'>0</span>
+                                                    <span>trẻ em</span>
+                                                    <div class="up" id="btn-up" direct=".num-child">+</div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="gap-xs"></div>
                                     <a href="#" class="btn-submit">Tìm</a>
                                 
-                                    <label for="user1" class="l-address del-border">
-                                        <select name="" id="user1" class="address c-main-light border-0 small-size">
-                                            <option value="">Khách sạn đã xem gần đây</option>
-                                            <option value="">1 adult</option>
-                                        </select>
-                                        <img src="image/icon/Icon awesome-history.png" alt="">
-                                    </label>
+                                    <div class="bg-history text-left dropdownMenuLink">
+                                        <button type="button" class="c-main small-size">
+                                            <img src="image/icon/Icon awesome-history.png" alt="">
+                                            Khách sạn đã xem gần đây
+                                            <i class="fa fa-times icon"></i>
+                                        </button>
+                                        
+                                        <div class=" my-toggle toggle-history d-none">
+                                            <ul>
+                                                <li><a href="#">Khách sạn 1</a></li>
+                                                <li><a href="#">Khách sạn 1</a></li>
+                                                <li><a href="#">Khách sạn 1</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </form>
                                 <a href="#" class="b-main-dark d-block">
                                     <div class="row align-items-center p-2">
@@ -370,7 +402,7 @@
 <!-----header----->
 <!-- --- form for mobile --- -->
 <div class="banner-slider d-lg-block d-none">
-    <div class="w-o1">
+    <!-- <div class="w-o1">
         <img src="image/landing-top-img-1.png" alt="">
     </div>
     <div class="w-o2">
@@ -399,9 +431,39 @@
     </div>
     <div class="w-o10">
         <img src="image/landing-top-img-7.png" alt="">
-    </div>
+    </div> -->
     <div class="owl-carousel owl-theme" id="num0">
         <div class="item">
+            <div class="w-o1">
+                <img src="image/landing-top-img-1.png" alt="">
+            </div>
+            <div class="w-o2">
+                <img src="image/landing-top-img-4.png" alt="">
+            </div>
+            <div class="w-o3">
+                <img src="image/landing-top-img-2.png" alt="">
+            </div>
+            <div class="w-o4">
+                <img src="image/landing-top-img-9.png" alt="">
+            </div>
+            <div class="w-o5">
+                <img src="image/landing-top-img-3.png" alt="">
+            </div>
+            <div class="w-o6">
+                <img src="image/landing-top-img-8.png" alt="">
+            </div>
+            <div class="w-o7">
+                <img src="image/landing-top-img-10.png" alt="">
+            </div>
+            <div class="w-o8">
+                <img src="image/landing-top-img-5.png" alt="">
+            </div>
+            <div class="w-o9">
+                <img src="image/landing-top-img-6.png" alt="">
+            </div>
+            <div class="w-o10">
+                <img src="image/landing-top-img-7.png" alt="">
+            </div>
             <div class="text">
                 <h2>
                     HOTELS, RESORTS,<br>HOSTELS & MORE
@@ -410,6 +472,36 @@
             </div>
         </div>
         <div class="item">
+            <div class="w-o1">
+                <img src="image/landing-top-img-1.png" alt="">
+            </div>
+            <div class="w-o2">
+                <img src="image/landing-top-img-4.png" alt="">
+            </div>
+            <div class="w-o3">
+                <img src="image/landing-top-img-2.png" alt="">
+            </div>
+            <div class="w-o4">
+                <img src="image/landing-top-img-9.png" alt="">
+            </div>
+            <div class="w-o5">
+                <img src="image/landing-top-img-3.png" alt="">
+            </div>
+            <div class="w-o6">
+                <img src="image/landing-top-img-8.png" alt="">
+            </div>
+            <div class="w-o7">
+                <img src="image/landing-top-img-10.png" alt="">
+            </div>
+            <div class="w-o8">
+                <img src="image/landing-top-img-5.png" alt="">
+            </div>
+            <div class="w-o9">
+                <img src="image/landing-top-img-6.png" alt="">
+            </div>
+            <div class="w-o10">
+                <img src="image/landing-top-img-7.png" alt="">
+            </div>
             <div class="text">
                 <h2>
                     HOTELS, RESORTS,<br>HOSTELS & MORE
@@ -512,7 +604,7 @@
                                 <div class="col-8">
                                     <div class="room-option">
                                         <div class="">
-                                            <span class="dropdown-toggle my-btn text-left" id="dropdownMenuLink">
+                                            <span class="dropdown-toggle my-btn text-left dropdownMenuLink">
                                                 <div class="img-wrap">
                                                     <img src="image/icon/group.png" alt="">
                                                 </div>
@@ -525,59 +617,151 @@
                                                     </small>
                                                 </div>
                                             </span>
-                                    
-
-                                            <div class="my-dropdown-menu d-none">
+                                            <div class="my-dropdown-menu my-toggle d-none">
                                                 <div class="wrap-form-opt-room" id="wrap-form-opt-room">
-                                                      <ul>
-                                                            <li>
-                                                                <div class="opt-label c-dark text-left dom-click" >Đi 1 mình<small class="i-room" value="1">1 phòng</small><small>, </small><small class="i-user" value="1"> 1 người lớn</small>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="opt-label c-dark text-left dom-click" >Cặp đôi / 2 người<small class="i-room" value="1">1 phòng</small><small>, </small><small class="i-user" value="2"> 2 người lớn</small>
-                                                                </div>
-                                                            </li>
-                                                            
-                                                            <li>
-                                                                <div class="opt-menu opt-label c-dark text-left">
-                                                                    <span>Theo gia đình</span>
-                                                                    <i class="fa fa-angle-right"></i>
-                                                                    <div  class="opt-menu-wrap">
-                                                                        <ul>
-  
-                                                                            <li>
-                                                            <div class="setup-select-user text-center">
-                                                                <div class="down">-</div>
-                                                                <span class="num-result" direct=".num-user" value='2'>2</span>
-                                                                <span>người lớn</span>
-                                                                <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="opt-label c-dark text-left dom-click" >Đi 1 mình<small class="i-room" value="1">1 phòng</small><small>, </small><small class="i-user" value="1"> 1 người lớn</small>
                                                             </div>
-                                                            <div class="setup-select-child text-center">
-                                                                <div class="down">-</div>
-                                                                <span class="num-result" direct=".num-room" value='1'>1</span>
-                                                                <span>phòng</span>
-                                                                <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="opt-label c-dark text-left dom-click" >Cặp đôi / 2 người<small class="i-room" value="1">1 phòng</small><small>, </small><small class="i-user" value="2"> 2 người lớn</small>
                                                             </div>
-                                                            <div class="setup-select-room text-center">
-                                                                <div class="down">-</div>
-                                                                <span class="num-result" direct=".num-child" value='0'>0</span>
-                                                                <span>trẻ em</span>
-                                                                <div class="up" id="btn-up" direct=".num-child">+</div>
-                                                            </div>
-
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="opt-menu opt-label c-dark text-left">
+                                                                <span>Theo gia đình</span>
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <div  class="opt-menu-wrap">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="setup-select-child text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                                                <span>phòng</span>
+                                                                                <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-user text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                                                <span>người lớn</span>
+                                                                                <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-room text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-child" value='0'>0</span>
+                                                                                <span>trẻ em</span>
+                                                                                <div class="up" id="btn-up" direct=".num-child">+</div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="gap-xs"></div>
+                                                                            <strong class="xsmall-size">
+                                                                                Du lịch cùng bé yêu?
+                                                                            </strong>
+                                                                            <div class="content xsmall-size">
+                                                                                Bao gồm cả mục phía trên có giá và ưu đãi tốt nhất cho các nơi ở phù hợp với trẻ em.
+                                                                                <i class="fa fa-users"></i>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="gap-sm"></div>
+                                                                            <div class="check2">
+                                                                                <label for="check2a" class="xsmall-size">
+                                                                                    <input type="checkbox" id="check2a">Tôi muốn phòng gia đình/phòng lớn
+                                                                                </label>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
                                                                 </div>
-                                                            </li>
-                                                        
-                                                      </ul>
-                                                        
-                                                        
-                                                        
-                                                    
-                                              </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="opt-menu opt-label c-dark text-left">
+                                                                <span>Theo đoàn/nhóm</span>
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <div  class="opt-menu-wrap">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="setup-select-child text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                                                <span>phòng</span>
+                                                                                <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-user text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                                                <span>người lớn</span>
+                                                                                <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-room text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-child" value='0'>0</span>
+                                                                                <span>trẻ em</span>
+                                                                                <div class="up" id="btn-up" direct=".num-child">+</div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="gap-xs"></div>
+                                                                            <div class="special text-center">
+                                                                                <div class="gap-xs"></div>
+                                                                                <i class="fa fa-users"></i>
+                                                                                <span class="xsmall-size c-dark">Cần 10 phòng trở lên ư?</span>
+                                                                                <span class="new text-uppercase xsmall-size c-white">mới</span>
+                                                                                <p class="c-dark xsmall-size text-center">
+                                                                                    Hiện có giá đặc biệt với đối tác của chúng tôi HotelPlanner
+                                                                                </p>
+                                                                                <a href="#" class="link small-size">Nhận báo giá cho nhóm</a>
+                                                                                <div class="gap-xs"></div>
+                                                                            </div>
+                                                                            
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="gap-sm"></div>
+                                                                            <div class="check2">
+                                                                                <label for="check2a" class="xsmall-size">
+                                                                                    <input type="checkbox" id="check2a">Tôi muốn phòng gia đình/phòng lớn
+                                                                                </label>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="opt-menu opt-label c-dark text-left">
+                                                                <span>Đi công tác</span>
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <div  class="opt-menu-wrap">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="setup-select-child text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                                                <span>phòng</span>
+                                                                                <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-user text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                                                <span>người lớn</span>
+                                                                                <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="check2">
+                                                                                <label for="check2a" class="xsmall-size">
+                                                                                    <input type="checkbox" id="check2a">Tôi muốn phòng gia đình/phòng lớn
+                                                                                </label>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -587,6 +771,7 @@
                                 </div>
                             </div>
                             <div class="gap-xs"></div>
+                            <div class="gap-xs"></div>
                             <div class="checkbox text-left">
                                 <span class="sm-title">Máy bay + K.sạn</span>
                                 <label for="check0">
@@ -595,13 +780,22 @@
                                 </label>
                             </div>
                             <div class="gap-xs"></div>
-                            <label for="user1" class="l-address del-border bg-history">
-                                <select name="" id="user1" class="address c-main-light border-0 small-size">
-                                    <option value="">Khách sạn đã xem gần đây</option>
-                                    <option value="">1 adult</option>
-                                </select>
-                                <img src="image/icon/Icon awesome-history.png" alt="">
-                            </label>
+                            <div class="bg-history text-left dropdownMenuLink">
+                                <button type="button" class="c-main">
+                                    <img src="image/icon/Icon awesome-history.png" alt="">
+                                    Khách sạn đã xem gần đây
+                                    <i class="fa fa-times icon"></i>
+                                </button>
+                                
+                                <div class=" my-toggle toggle-history d-none">
+                                    <ul>
+                                        <li><a href="#">Khách sạn 1</a></li>
+                                        <li><a href="#">Khách sạn 1</a></li>
+                                        <li><a href="#">Khách sạn 1</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
                         </form>
                     </div>
                 </div>
@@ -628,18 +822,175 @@
                             <div class="gap-xs"></div>
                             <div class="row">
                                 <div class="col-8">
-                                    <label for="user1" class="l-address">
-                                        <select name="" id="user1" class="address">
-                                            <option value="">2 adult</option>
-                                            <option value="">1 adult</option>
-                                        </select>
-                                        <img src="image/group.png" alt="">
-                                    </label>
+                                    <div class="room-option">
+                                        <div class="">
+                                            <span class="dropdown-toggle my-btn text-left dropdownMenuLink">
+                                                <div class="img-wrap">
+                                                    <img src="image/icon/group.png" alt="">
+                                                </div>
+                                                <div class="result-select" id="result-select">
+                                                    <span class="num-user">1</span><span> người lớn</span>
+                                                    <span class="num-child"></span><span class="num-childs"></span>
+                                                    <small>
+                                                        <span class="num-room">1</span>
+                                                        <span> phòng</span>
+                                                    </small>
+                                                </div>
+                                            </span>
+                                            <div class="my-dropdown-menu my-toggle d-none">
+                                                <div class="wrap-form-opt-room" id="wrap-form-opt-room">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="opt-label c-dark text-left dom-click" >Đi 1 mình<small class="i-room" value="1">1 phòng</small><small>, </small><small class="i-user" value="1"> 1 người lớn</small>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="opt-label c-dark text-left dom-click" >Cặp đôi / 2 người<small class="i-room" value="1">1 phòng</small><small>, </small><small class="i-user" value="2"> 2 người lớn</small>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="opt-menu opt-label c-dark text-left">
+                                                                <span>Theo gia đình</span>
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <div  class="opt-menu-wrap">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="setup-select-child text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                                                <span>phòng</span>
+                                                                                <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-user text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                                                <span>người lớn</span>
+                                                                                <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-room text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-child" value='0'>0</span>
+                                                                                <span>trẻ em</span>
+                                                                                <div class="up" id="btn-up" direct=".num-child">+</div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="gap-xs"></div>
+                                                                            <strong class="xsmall-size">
+                                                                                Du lịch cùng bé yêu?
+                                                                            </strong>
+                                                                            <div class="content xsmall-size">
+                                                                                Bao gồm cả mục phía trên có giá và ưu đãi tốt nhất cho các nơi ở phù hợp với trẻ em.
+                                                                                <i class="fa fa-users"></i>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="gap-sm"></div>
+                                                                            <div class="check2">
+                                                                                <label for="check2a" class="xsmall-size">
+                                                                                    <input type="checkbox" id="check2a">Tôi muốn phòng gia đình/phòng lớn
+                                                                                </label>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="opt-menu opt-label c-dark text-left">
+                                                                <span>Theo đoàn/nhóm</span>
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <div  class="opt-menu-wrap">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="setup-select-child text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                                                <span>phòng</span>
+                                                                                <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-user text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                                                <span>người lớn</span>
+                                                                                <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-room text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-child" value='0'>0</span>
+                                                                                <span>trẻ em</span>
+                                                                                <div class="up" id="btn-up" direct=".num-child">+</div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="gap-xs"></div>
+                                                                            <div class="special text-center">
+                                                                                <div class="gap-xs"></div>
+                                                                                <i class="fa fa-users"></i>
+                                                                                <span class="xsmall-size c-dark">Cần 10 phòng trở lên ư?</span>
+                                                                                <span class="new text-uppercase xsmall-size c-white">mới</span>
+                                                                                <p class="c-dark xsmall-size text-center">
+                                                                                    Hiện có giá đặc biệt với đối tác của chúng tôi HotelPlanner
+                                                                                </p>
+                                                                                <a href="#" class="link small-size">Nhận báo giá cho nhóm</a>
+                                                                                <div class="gap-xs"></div>
+                                                                            </div>
+                                                                            
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="gap-sm"></div>
+                                                                            <div class="check2">
+                                                                                <label for="check2a" class="xsmall-size">
+                                                                                    <input type="checkbox" id="check2a">Tôi muốn phòng gia đình/phòng lớn
+                                                                                </label>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="opt-menu opt-label c-dark text-left">
+                                                                <span>Đi công tác</span>
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <div  class="opt-menu-wrap">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="setup-select-child text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                                                <span>phòng</span>
+                                                                                <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-user text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                                                <span>người lớn</span>
+                                                                                <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="check2">
+                                                                                <label for="check2a" class="xsmall-size">
+                                                                                    <input type="checkbox" id="check2a">Tôi muốn phòng gia đình/phòng lớn
+                                                                                </label>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-4">
                                     <a href="#" class="btn-submit">Tìm</a>
                                 </div>
                             </div>
+                            <div class="gap-xs"></div>
                             <div class="gap-xs"></div>
                             <div class="checkbox text-left">
                                 <span class="sm-title">Máy bay + K.sạn</span>
@@ -649,13 +1000,22 @@
                                 </label>
                             </div>
                             <div class="gap-xs"></div>
-                            <label for="user1" class="l-address del-border bg-history">
-                                <select name="" id="user1" class="address c-main-light border-0 small-size">
-                                    <option value="">Khách sạn đã xem gần đây</option>
-                                    <option value="">1 adult</option>
-                                </select>
-                                <img src="image/icon/Icon awesome-history.png" alt="">
-                            </label>
+                            <div class="bg-history text-left dropdownMenuLink">
+                                <button type="button" class="c-main">
+                                    <img src="image/icon/Icon awesome-history.png" alt="">
+                                    Khách sạn đã xem gần đây
+                                    <i class="fa fa-times icon"></i>
+                                </button>
+                                
+                                <div class=" my-toggle toggle-history d-none">
+                                    <ul>
+                                        <li><a href="#">Khách sạn 1</a></li>
+                                        <li><a href="#">Khách sạn 1</a></li>
+                                        <li><a href="#">Khách sạn 1</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
                         </form>
                     </div>
                 </div>
@@ -682,18 +1042,175 @@
                             <div class="gap-xs"></div>
                             <div class="row">
                                 <div class="col-8">
-                                    <label for="user1" class="l-address">
-                                        <select name="" id="user1" class="address">
-                                            <option value="">2 adult</option>
-                                            <option value="">1 adult</option>
-                                        </select>
-                                        <img src="image/group.png" alt="">
-                                    </label>
+                                    <div class="room-option">
+                                        <div class="">
+                                            <span class="dropdown-toggle my-btn text-left dropdownMenuLink">
+                                                <div class="img-wrap">
+                                                    <img src="image/icon/group.png" alt="">
+                                                </div>
+                                                <div class="result-select" id="result-select">
+                                                    <span class="num-user">1</span><span> người lớn</span>
+                                                    <span class="num-child"></span><span class="num-childs"></span>
+                                                    <small>
+                                                        <span class="num-room">1</span>
+                                                        <span> phòng</span>
+                                                    </small>
+                                                </div>
+                                            </span>
+                                            <div class="my-dropdown-menu my-toggle d-none">
+                                                <div class="wrap-form-opt-room" id="wrap-form-opt-room">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="opt-label c-dark text-left dom-click" >Đi 1 mình<small class="i-room" value="1">1 phòng</small><small>, </small><small class="i-user" value="1"> 1 người lớn</small>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="opt-label c-dark text-left dom-click" >Cặp đôi / 2 người<small class="i-room" value="1">1 phòng</small><small>, </small><small class="i-user" value="2"> 2 người lớn</small>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="opt-menu opt-label c-dark text-left">
+                                                                <span>Theo gia đình</span>
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <div  class="opt-menu-wrap">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="setup-select-child text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                                                <span>phòng</span>
+                                                                                <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-user text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                                                <span>người lớn</span>
+                                                                                <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-room text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-child" value='0'>0</span>
+                                                                                <span>trẻ em</span>
+                                                                                <div class="up" id="btn-up" direct=".num-child">+</div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="gap-xs"></div>
+                                                                            <strong class="xsmall-size">
+                                                                                Du lịch cùng bé yêu?
+                                                                            </strong>
+                                                                            <div class="content xsmall-size">
+                                                                                Bao gồm cả mục phía trên có giá và ưu đãi tốt nhất cho các nơi ở phù hợp với trẻ em.
+                                                                                <i class="fa fa-users"></i>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="gap-sm"></div>
+                                                                            <div class="check2">
+                                                                                <label for="check2a" class="xsmall-size">
+                                                                                    <input type="checkbox" id="check2a">Tôi muốn phòng gia đình/phòng lớn
+                                                                                </label>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="opt-menu opt-label c-dark text-left">
+                                                                <span>Theo đoàn/nhóm</span>
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <div  class="opt-menu-wrap">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="setup-select-child text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                                                <span>phòng</span>
+                                                                                <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-user text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                                                <span>người lớn</span>
+                                                                                <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-room text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-child" value='0'>0</span>
+                                                                                <span>trẻ em</span>
+                                                                                <div class="up" id="btn-up" direct=".num-child">+</div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="gap-xs"></div>
+                                                                            <div class="special text-center">
+                                                                                <div class="gap-xs"></div>
+                                                                                <i class="fa fa-users"></i>
+                                                                                <span class="xsmall-size c-dark">Cần 10 phòng trở lên ư?</span>
+                                                                                <span class="new text-uppercase xsmall-size c-white">mới</span>
+                                                                                <p class="c-dark xsmall-size text-center">
+                                                                                    Hiện có giá đặc biệt với đối tác của chúng tôi HotelPlanner
+                                                                                </p>
+                                                                                <a href="#" class="link small-size">Nhận báo giá cho nhóm</a>
+                                                                                <div class="gap-xs"></div>
+                                                                            </div>
+                                                                            
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="gap-sm"></div>
+                                                                            <div class="check2">
+                                                                                <label for="check2a" class="xsmall-size">
+                                                                                    <input type="checkbox" id="check2a">Tôi muốn phòng gia đình/phòng lớn
+                                                                                </label>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="opt-menu opt-label c-dark text-left">
+                                                                <span>Đi công tác</span>
+                                                                <i class="fa fa-angle-right"></i>
+                                                                <div  class="opt-menu-wrap">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="setup-select-child text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                                                <span>phòng</span>
+                                                                                <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                                            </div>
+                                                                            <div class="setup-select-user text-center">
+                                                                                <div class="down">-</div>
+                                                                                <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                                                <span>người lớn</span>
+                                                                                <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="check2">
+                                                                                <label for="check2a" class="xsmall-size">
+                                                                                    <input type="checkbox" id="check2a">Tôi muốn phòng gia đình/phòng lớn
+                                                                                </label>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-4">
                                     <a href="#" class="btn-submit">Tìm</a>
                                 </div>
                             </div>
+                            <div class="gap-xs"></div>
                             <div class="gap-xs"></div>
                             <div class="checkbox text-left">
                                 <span class="sm-title">Máy bay + K.sạn</span>
@@ -703,13 +1220,22 @@
                                 </label>
                             </div>
                             <div class="gap-xs"></div>
-                            <label for="user1" class="l-address del-border bg-history">
-                                <select name="" id="user1" class="address c-main-light border-0 small-size">
-                                    <option value="">Khách sạn đã xem gần đây</option>
-                                    <option value="">1 adult</option>
-                                </select>
-                                <img src="image/icon/Icon awesome-history.png" alt="">
-                            </label>
+                            <div class="bg-history text-left dropdownMenuLink">
+                                <button type="button" class="c-main">
+                                    <img src="image/icon/Icon awesome-history.png" alt="">
+                                    Khách sạn đã xem gần đây
+                                    <i class="fa fa-times icon"></i>
+                                </button>
+                                
+                                <div class=" my-toggle toggle-history d-none">
+                                    <ul>
+                                        <li><a href="#">Khách sạn 1</a></li>
+                                        <li><a href="#">Khách sạn 1</a></li>
+                                        <li><a href="#">Khách sạn 1</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
                         </form>
                     </div>
                 </div>
