@@ -7,20 +7,24 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="asset/setup.css">
     <!----component---->
     <link rel="stylesheet" href="component/header/style.css">
     <link rel="stylesheet" href="component/footer/style.css">
     <link rel="stylesheet" href="component/slider-basic/style.css">
     <link rel="stylesheet" href="component/card-trip/style.css">
+    <link rel="stylesheet" href="component/search-form-home/style.css">
 
     <!----edit---->
     <link rel="stylesheet" href="edit-style/index.css">
     <link rel="stylesheet" href="asset/style.css">
 </head>
 <body>
+
+
 
 <div class="header-main">
     <div class="container">
@@ -364,6 +368,7 @@
     </div>
 </div>
 <!-----header----->
+<!-- --- form for mobile --- -->
 <div class="banner-slider d-lg-block d-none">
     <div class="w-o1">
         <img src="image/landing-top-img-1.png" alt="">
@@ -415,6 +420,7 @@
     </div>
 
 </div>
+<!-- --- form for desk --- -->
 <div class="wrap-form-search d-lg-block d-none">
 
     <div class="under-slide d-lg-block d-none">
@@ -504,13 +510,77 @@
                             <div class="gap-xs"></div>
                             <div class="row">
                                 <div class="col-8">
-                                    <label for="user1" class="l-address">
-                                        <select name="" id="user1" class="address">
-                                            <option value="">2 adult</option>
-                                            <option value="">1 adult</option>
-                                        </select>
-                                        <img src="image/group.png" alt="">
-                                    </label>
+                                    <div class="room-option">
+                                        <div class="">
+                                            <span class="dropdown-toggle my-btn text-left" id="dropdownMenuLink">
+                                                <div class="img-wrap">
+                                                    <img src="image/icon/group.png" alt="">
+                                                </div>
+                                                <div class="result-select" id="result-select">
+                                                    <span class="num-user">1</span><span> người lớn</span>
+                                                    <span class="num-child"></span><span class="num-childs"></span>
+                                                    <small>
+                                                        <span class="num-room">1</span>
+                                                        <span> phòng</span>
+                                                    </small>
+                                                </div>
+                                            </span>
+                                    
+
+                                            <div class="my-dropdown-menu d-none">
+                                                <div class="wrap-form-opt-room" id="wrap-form-opt-room">
+                                                      <ul>
+                                                            <li>
+                                                                <div class="opt-label c-dark text-left dom-click" >Đi 1 mình<small class="i-room" value="1">1 phòng</small><small>, </small><small class="i-user" value="1"> 1 người lớn</small>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="opt-label c-dark text-left dom-click" >Cặp đôi / 2 người<small class="i-room" value="1">1 phòng</small><small>, </small><small class="i-user" value="2"> 2 người lớn</small>
+                                                                </div>
+                                                            </li>
+                                                            
+                                                            <li>
+                                                                <div class="opt-menu opt-label c-dark text-left">
+                                                                    <span>Theo gia đình</span>
+                                                                    <i class="fa fa-angle-right"></i>
+                                                                    <div  class="opt-menu-wrap">
+                                                                        <ul>
+  
+                                                                            <li>
+                                                            <div class="setup-select-user text-center">
+                                                                <div class="down">-</div>
+                                                                <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                                <span>người lớn</span>
+                                                                <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                            </div>
+                                                            <div class="setup-select-child text-center">
+                                                                <div class="down">-</div>
+                                                                <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                                <span>phòng</span>
+                                                                <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                            </div>
+                                                            <div class="setup-select-room text-center">
+                                                                <div class="down">-</div>
+                                                                <span class="num-result" direct=".num-child" value='0'>0</span>
+                                                                <span>trẻ em</span>
+                                                                <div class="up" id="btn-up" direct=".num-child">+</div>
+                                                            </div>
+
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        
+                                                      </ul>
+                                                        
+                                                        
+                                                        
+                                                    
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-4">
                                     <a href="#" class="btn-submit">Tìm</a>
@@ -1325,9 +1395,11 @@
 </body>
 </html>
 <script src="bootstrap/js/jquery-3.4.1.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
-
+<!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script src="component/search-form-home/script.js"></script>
 <script src="component/slider-basic/script.js"></script>
 
 <script>

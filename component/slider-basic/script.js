@@ -107,7 +107,6 @@ $(document).ready(function(){
         
         temp3 *= 2;
         temp3 += 'px';
-        console.log(temp3);
         $(element).find('.owl-carousel').css('height',temp3);
     });
     
