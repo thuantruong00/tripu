@@ -250,8 +250,8 @@
     margin-bottom: 0;
     width: 100%;
 }
-.wrap-form .checkbox .sm-title{
-    background-image: url('../image/index/Path 10871.png');
+.sm-title{
+    background-image: url('../image/index/Path10871.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -261,6 +261,23 @@
     width: 100px;
     text-align: center;
     color: #fff;
+}
+.label-new{
+    background-image: url('../image/index/new.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -15px;
+    left: 35px;
+    font-size: 10px;
+    width: 30px;
+    padding:5px 0px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.menu-wrap .sm-title{
+    left:10px;
 }
 .wrap-form .bg-history select{
     background: #f9f9f9;
@@ -443,6 +460,10 @@
 .slider-hotel-list .owl-dots {
     display: none;
 }
+.hotel-list-item{
+    font-size: 14px;
+}
+
 
 @media only screen and (max-width:767px){
     .grid-container{
@@ -471,7 +492,7 @@
     }
 
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:991px){
     .hotel-list{
         background-color: #E9EFFF;
         min-height: 430px;
@@ -482,5 +503,9 @@
     .slider-hotel-list .owl-dots {
         display: block;
         bottom: -17px;
+    }
+    .hotel-list-title,
+    .hotel-list-item{
+        font-size: 12px;
     }
 }

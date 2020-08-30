@@ -100,11 +100,11 @@
 .slider-2 button {
     display: none;
 }
-#num2{
+.slider-2 .owl-carousel{
     margin: auto;
 }
-#num2 .owl-stage-outer,
-#num2 .owl-stage-outer .owl-stage{
+.slider-2 .owl-carousel .owl-stage-outer,
+.slider-2 .owl-carousel .owl-stage-outer .owl-stage{
     height: 100%;
 }
 

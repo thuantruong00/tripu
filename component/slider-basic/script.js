@@ -72,6 +72,9 @@ $(document).ready(function(){
         }
     });
 
+
+
+    
     windowSize = $(window).width();
     setHeight();
     $(window).resize(function() {
@@ -96,35 +99,61 @@ $(document).ready(function(){
         }
     }
 
-    temp2 = $('#num2 .center');
-    temp3=temp2.height();
-    temp3*=2;
-    temp3+='px';
-    $('#num2').css('height',temp3);
+    $('.slider-2').each(function(index, element){
+        temp2 = $(element).find('.center');
+        
+        //temp2 = $('#num2 .center');
+        temp3 = temp2.height();
+        
+        temp3 *= 2;
+        temp3 += 'px';
+        console.log(temp3);
+        $(element).find('.owl-carousel').css('height',temp3);
+    });
+    
+
+    // temp2 = $('#num2 .center');
+    // temp3=temp2.height();
+    // temp3*=2;
+    // temp3+='px';
+    // $('#num2').css('height',temp3);
     
 
 
-a = $('.center').prev();
-b = $(a).find('img');
-$('#num2 img').removeClass('c-scale');
-$(b[1]).addClass('c-scale'); 
+    a = $('.center').prev();
+    b = $(a).find('img');
+    $('#num2 img').removeClass('c-scale');
+    $(b[1]).addClass('c-scale'); 
+    $(b[2]).addClass('c-scale'); 
 
 
-
-    // flag  = 0 ;
-    // $('#num2').mousedown((event)=>{
-    //     flag=1;
-    // });
-    // $(window).mouseup((event)=>{
-    //     if(flag==1){
-    //         //$('.center').prev().find('img').addClass('c-scale');
-    //         a = $('.center').prev();
-    //         b = $(a).find('img');
-    //         $('#num2 img').removeClass('c-scale');
-    //         $(b[1]).addClass('c-scale');        
-    //     }
-    //     flag=0;
+    flag  = 0 ;
+    $('#num2').mousedown((event)=>{
+        flag=1;
+    });
+    $('#num3').mousedown((event)=>{
+        flag=2;
+    });
+    $(window).mouseup((event)=>{
+        if(flag==1){
+            //$('.center').prev().find('img').addClass('c-scale');
+            a = $('.center').prev();
+            b = $(a).find('img');
+            $('#num2 img').removeClass('c-scale');
+            $(b[1]).addClass('c-scale');        
+        }
+        if(flag==2){
+            //$('.center').prev().find('img').addClass('c-scale');
+            a = $('.center').prev();
+            b = $(a).find('img');
+            $('#num3 img').removeClass('c-scale');
+            $(b[2]).addClass('c-scale');    
+            console.log(b);    
+        }
+        flag=0;
         
-    // });
+    });
+
+
 
 });
