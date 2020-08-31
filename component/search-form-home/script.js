@@ -9,14 +9,23 @@ $(document).ready(function(){
             
         });
     });
-
+    $('.bg-dark-on').click(function(){
+        $('.bg-outside').removeClass('d-none');
+    });
     $('.dropdownMenuLink').each(function(index,element){
         $(element).click(function(event){
+            $('.bg-outside').removeClass('d-none');
             q=$('.my-toggle');
             $(q[index]).toggleClass('d-none');
         });
     });
-
+    $('.bg-outside').click(function(){
+        $('.bg-outside').addClass('d-none');
+        $('.my-toggle').addClass('d-none');
+    });
+    $('.back').click(function(){
+        $('.my-toggle').addClass('d-none');
+    });
     $('.down').click(function(){
         printnum = $(this).next('.num-result').attr('value');
         direct= '#result-select';
@@ -46,4 +55,20 @@ $(document).ready(function(){
         $(this).prev('span').prev('.num-result').attr('value',printnum);
         $(this).prev('span').prev('.num-result').text(printnum);
     });
+
+
+        $('input[type="date"]#date').change(function(){
+            console.log(this.value);
+            temp = this.value;
+            arr = temp.split('-');
+            res = arr[2]+'-'+arr[1]+'-'+arr[0];
+            $('.getDate').text(res);
+        });
+        $('input[type="date"]#date2').change(function(){
+            console.log(this.value);
+            temp = this.value;
+            arr = temp.split('-');
+            res = arr[2]+'-'+arr[1]+'-'+arr[0];
+            $('.getDate2').text(res);
+        });
 })

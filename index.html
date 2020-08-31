@@ -6,6 +6,7 @@
     <title>TripU</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -24,8 +25,7 @@
 </head>
 <body>
 
-
-
+    
 <div class="header-main">
     <div class="container">
         <span class="logo-wrap">
@@ -57,7 +57,7 @@
             </span>
             <div class="user">
                 <a href="#" class="login">
-                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    <i class="fas fa-sign-in-alt" aria-hidden="true"></i>
                     Log in
                 </a>
                 <a href="#" class="signup">Sign up</a>
@@ -149,11 +149,13 @@
                                     </label>
                                     <div class="gap-xs"></div>
                                     <div class="container bg-w">
+                                    
                                         <div class="row">
+                                
                                             <div class="col-5">
-                                                <label for="date" class="fix-input">
-                                                    <input type="date" id="date" class="address">
-                                                </label>
+                                                
+                                                <div class="out-date getDate">1-1-2020</div>
+                                                <input type="date" id="date" class="bg-dark-on in-date">
                                             </div>
                                             <div class="col-2">
                                                 <div class="wrap-arrow">
@@ -161,10 +163,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-5">
-                                                <label for="date2" class="fix-input">
-                                                    <input type="date" id="date2" class="address">
-                                                </label>
+                                                <div class="out-date out-date-fix getDate2">1-1-2021</div>
+                                                <input type="date" id="date2" class="bg-dark-on in-date2">
                                             </div>
+                                            <div class="gap-sm-fix"></div>
+                                            
+                                            
                                         </div>
                                     </div>
                                     <div class="gap-xs"></div>
@@ -185,21 +189,28 @@
                                         <div class="gap-xs"></div>
                                     </button>
                                     <div  class="opt-menu-wrap opt-menu-wrap-mobile my-toggle d-none">
-                                        <ul>
+                                        <ul class="menu-full-screen1">
                                             <li>
-                                                <div class="setup-select-child text-center">
+                                                <div class="back text-left flarge-size">
+                                                    <i class="fa fa-angle-left"></i>
+                                                    Quay về
+                                                </div>
+                                                <div class="gap-sm"></div>
+                                                <div class="setup-select-child text-left flarge-size">
                                                     <div class="down">-</div>
                                                     <span class="num-result" direct=".num-room" value='1'>1</span>
                                                     <span>phòng</span>
                                                     <div class="up" id="btn-up" direct=".num-room">+</div>
                                                 </div>
-                                                <div class="setup-select-user text-center">
+                                                <div class="gap-xs"></div>
+                                                <div class="setup-select-user text-left flarge-size">
                                                     <div class="down">-</div>
                                                     <span class="num-result" direct=".num-user" value='2'>2</span>
                                                     <span>người lớn</span>
                                                     <div class="up" id="btn-up" direct=".num-user">+</div>
                                                 </div>
-                                                <div class="setup-select-room text-center">
+                                                <div class="gap-xs"></div>
+                                                <div class="setup-select-room text-left flarge-size">
                                                     <div class="down">-</div>
                                                     <span class="num-result" direct=".num-child" value='0'>0</span>
                                                     <span>trẻ em</span>
@@ -253,11 +264,13 @@
                                     </label>
                                     <div class="gap-xs"></div>
                                     <div class="container bg-w">
+                                    
                                         <div class="row">
+                                
                                             <div class="col-5">
-                                                <label for="date" class="fix-input">
-                                                    <input type="date" id="date" class="address">
-                                                </label>
+                                                
+                                                <div class="out-date getDate">1-1-2020</div>
+                                                <input type="date" id="date" class="bg-dark-on in-date">
                                             </div>
                                             <div class="col-2">
                                                 <div class="wrap-arrow">
@@ -265,10 +278,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-5">
-                                                <label for="date2" class="fix-input">
-                                                    <input type="date" id="date2" class="address">
-                                                </label>
+                                                <div class="out-date out-date-fix getDate2">1-1-2021</div>
+                                                <input type="date" id="date2" class="bg-dark-on in-date2">
                                             </div>
+                                            <div class="gap-sm-fix"></div>
+                                            
+                                            
                                         </div>
                                     </div>
                                     <div class="gap-xs"></div>
@@ -289,21 +304,28 @@
                                         <div class="gap-xs"></div>
                                     </button>
                                     <div  class="opt-menu-wrap opt-menu-wrap-mobile my-toggle d-none">
-                                        <ul>
+                                        <ul class="menu-full-screen1">
                                             <li>
-                                                <div class="setup-select-child text-center">
+                                                <div class="back text-left flarge-size">
+                                                    <i class="fa fa-angle-left"></i>
+                                                    Quay về
+                                                </div>
+                                                <div class="gap-sm"></div>
+                                                <div class="setup-select-child text-left flarge-size">
                                                     <div class="down">-</div>
                                                     <span class="num-result" direct=".num-room" value='1'>1</span>
                                                     <span>phòng</span>
                                                     <div class="up" id="btn-up" direct=".num-room">+</div>
                                                 </div>
-                                                <div class="setup-select-user text-center">
+                                                <div class="gap-xs"></div>
+                                                <div class="setup-select-user text-left flarge-size">
                                                     <div class="down">-</div>
                                                     <span class="num-result" direct=".num-user" value='2'>2</span>
                                                     <span>người lớn</span>
                                                     <div class="up" id="btn-up" direct=".num-user">+</div>
                                                 </div>
-                                                <div class="setup-select-room text-center">
+                                                <div class="gap-xs"></div>
+                                                <div class="setup-select-room text-left flarge-size">
                                                     <div class="down">-</div>
                                                     <span class="num-result" direct=".num-child" value='0'>0</span>
                                                     <span>trẻ em</span>
@@ -357,11 +379,13 @@
                                     </label>
                                     <div class="gap-xs"></div>
                                     <div class="container bg-w">
+                                    
                                         <div class="row">
+                                
                                             <div class="col-5">
-                                                <label for="date" class="fix-input">
-                                                    <input type="date" id="date" class="address">
-                                                </label>
+                                                
+                                                <div class="out-date getDate">1-1-2020</div>
+                                                <input type="date" id="date" class="bg-dark-on in-date">
                                             </div>
                                             <div class="col-2">
                                                 <div class="wrap-arrow">
@@ -369,10 +393,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-5">
-                                                <label for="date2" class="fix-input">
-                                                    <input type="date" id="date2" class="address">
-                                                </label>
+                                                <div class="out-date out-date-fix getDate2">1-1-2021</div>
+                                                <input type="date" id="date2" class="bg-dark-on in-date2">
                                             </div>
+                                            <div class="gap-sm-fix"></div>
+                                            
+                                            
                                         </div>
                                     </div>
                                     <div class="gap-xs"></div>
@@ -393,21 +419,28 @@
                                         <div class="gap-xs"></div>
                                     </button>
                                     <div  class="opt-menu-wrap opt-menu-wrap-mobile my-toggle d-none">
-                                        <ul>
+                                        <ul class="menu-full-screen1">
                                             <li>
-                                                <div class="setup-select-child text-center">
+                                                <div class="back text-left flarge-size">
+                                                    <i class="fa fa-angle-left"></i>
+                                                    Quay về
+                                                </div>
+                                                <div class="gap-sm"></div>
+                                                <div class="setup-select-child text-left flarge-size">
                                                     <div class="down">-</div>
                                                     <span class="num-result" direct=".num-room" value='1'>1</span>
                                                     <span>phòng</span>
                                                     <div class="up" id="btn-up" direct=".num-room">+</div>
                                                 </div>
-                                                <div class="setup-select-user text-center">
+                                                <div class="gap-xs"></div>
+                                                <div class="setup-select-user text-left flarge-size">
                                                     <div class="down">-</div>
                                                     <span class="num-result" direct=".num-user" value='2'>2</span>
                                                     <span>người lớn</span>
                                                     <div class="up" id="btn-up" direct=".num-user">+</div>
                                                 </div>
-                                                <div class="setup-select-room text-center">
+                                                <div class="gap-xs"></div>
+                                                <div class="setup-select-room text-left flarge-size">
                                                     <div class="down">-</div>
                                                     <span class="num-result" direct=".num-child" value='0'>0</span>
                                                     <span>trẻ em</span>
@@ -575,14 +608,14 @@
 
 </div>
 <!-- --- form for desk --- -->
-<div class="wrap-form-search d-lg-block d-none">
 
+<div class="wrap-form-search d-lg-block d-none">
+    
     <div class="under-slide d-lg-block d-none">
         <img class="w-o11" src="image/Path 10755.png" alt="">
         <img class="w-o12"  src="image/Path 96.png" alt="">
         <img class="w-o13"  src="image/Path 97.png" alt="">
     </div>
-
     <div class="text-center wrap-navs">
         <div class="d-inline-block">
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -644,28 +677,34 @@
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="wrap-form">
                         <form action="">
-                            <label for="address" class="l-address">
+                            <label for="address" class="l-address bg-dark-on">
+                                
                                 <input type="text" id="address" class="address" placeholder="Nhập điểm du lịch và khách sạn">
                                 <img src="image/Group 558.png" alt="">
                             </label>
                             <div class="gap-xs"></div>
                             <div class="row">
+                                
                                 <div class="col-6">
-                                    <label for="address" class="l-address">
-                                        <input type="date" id="date" class="address">
-                                    </label>
+                                    
+                                    <div class="out-date getDate">1-1-2020</div>
+                                    <input type="date" id="date" class="bg-dark-on in-date">
                                 </div>
                                 <div class="col-6">
-                                    <label for="address" class="l-address">
-                                        <input type="date" id="date2" class="address">
-                                    </label>
+                                    <div class="out-date out-date-fix getDate2">1-1-2021</div>
+                                    <input type="date" id="date2" class="bg-dark-on in-date2">
                                 </div>
+                                <div class="gap-sm"></div>
+                                <div class="gap-sm"></div>
                             </div>
                             <div class="gap-xs"></div>
                             <div class="row">
+                                <div class="bg-outside d-none"></div>
                                 <div class="col-8">
                                     <div class="room-option">
+                                        
                                         <div class="">
+                                            
                                             <span class="dropdown-toggle my-btn text-left dropdownMenuLink">
                                                 <div class="img-wrap">
                                                     <img src="image/icon/group.png" alt="">
@@ -834,7 +873,7 @@
                             </div>
                             <div class="gap-xs"></div>
                             <div class="gap-xs"></div>
-                            <div class="checkbox text-left">
+                            <div class="checkbox text-left bg-dark-on">
                                 <span class="sm-title">Máy bay + K.sạn</span>
                                 <label for="check0">
                                     <input type="checkbox" id="check0">
@@ -842,18 +881,17 @@
                                 </label>
                             </div>
                             <div class="gap-xs"></div>
-                            <div class="bg-history text-left dropdownMenuLink">
+                            <div class="bg-history text-left bg-dark-on">
                                 <button type="button" class="c-main">
                                     <img src="image/icon/Icon awesome-history.png" alt="">
                                     Khách sạn đã xem gần đây
                                     <i class="fa fa-times icon"></i>
                                 </button>
-                                
-                                <div class=" my-toggle toggle-history d-none">
+                                <div class="toggle-history">
                                     <ul>
-                                        <li><a href="#">Khách sạn 1</a></li>
-                                        <li><a href="#">Khách sạn 1</a></li>
-                                        <li><a href="#">Khách sạn 1</a></li>
+                                        <li><a href="#" class="d-block">Khách sạn 1</a></li>
+                                        <li><a href="#" class="d-block">Khách sạn 1</a></li>
+                                        <li><a href="#" class="d-block">Khách sạn 1</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -864,28 +902,34 @@
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div class="wrap-form">
                         <form action="">
-                            <label for="address" class="l-address">
+                            <label for="address" class="l-address bg-dark-on">
+                                
                                 <input type="text" id="address" class="address" placeholder="Nhập điểm du lịch và khách sạn">
                                 <img src="image/Group 558.png" alt="">
                             </label>
                             <div class="gap-xs"></div>
                             <div class="row">
+                                
                                 <div class="col-6">
-                                    <label for="address" class="l-address">
-                                        <input type="date" id="date" class="address">
-                                    </label>
+                                    
+                                    <div class="out-date getDate">1-1-2020</div>
+                                    <input type="date" id="date" class="bg-dark-on in-date">
                                 </div>
                                 <div class="col-6">
-                                    <label for="address" class="l-address">
-                                        <input type="date" id="date2" class="address">
-                                    </label>
+                                    <div class="out-date out-date-fix getDate2">1-1-2021</div>
+                                    <input type="date" id="date2" class="bg-dark-on in-date2">
                                 </div>
+                                <div class="gap-sm"></div>
+                                <div class="gap-sm"></div>
                             </div>
                             <div class="gap-xs"></div>
                             <div class="row">
+                                <div class="bg-outside d-none"></div>
                                 <div class="col-8">
                                     <div class="room-option">
+                                        
                                         <div class="">
+                                            
                                             <span class="dropdown-toggle my-btn text-left dropdownMenuLink">
                                                 <div class="img-wrap">
                                                     <img src="image/icon/group.png" alt="">
@@ -1054,7 +1098,7 @@
                             </div>
                             <div class="gap-xs"></div>
                             <div class="gap-xs"></div>
-                            <div class="checkbox text-left">
+                            <div class="checkbox text-left bg-dark-on">
                                 <span class="sm-title">Máy bay + K.sạn</span>
                                 <label for="check0">
                                     <input type="checkbox" id="check0">
@@ -1062,18 +1106,17 @@
                                 </label>
                             </div>
                             <div class="gap-xs"></div>
-                            <div class="bg-history text-left dropdownMenuLink">
+                            <div class="bg-history text-left bg-dark-on">
                                 <button type="button" class="c-main">
                                     <img src="image/icon/Icon awesome-history.png" alt="">
                                     Khách sạn đã xem gần đây
                                     <i class="fa fa-times icon"></i>
                                 </button>
-                                
-                                <div class=" my-toggle toggle-history d-none">
+                                <div class="toggle-history">
                                     <ul>
-                                        <li><a href="#">Khách sạn 1</a></li>
-                                        <li><a href="#">Khách sạn 1</a></li>
-                                        <li><a href="#">Khách sạn 1</a></li>
+                                        <li><a href="#" class="d-block">Khách sạn 1</a></li>
+                                        <li><a href="#" class="d-block">Khách sạn 1</a></li>
+                                        <li><a href="#" class="d-block">Khách sạn 1</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1084,28 +1127,34 @@
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                     <div class="wrap-form">
                         <form action="">
-                            <label for="address" class="l-address">
+                            <label for="address" class="l-address bg-dark-on">
+                                
                                 <input type="text" id="address" class="address" placeholder="Nhập điểm du lịch và khách sạn">
                                 <img src="image/Group 558.png" alt="">
                             </label>
                             <div class="gap-xs"></div>
                             <div class="row">
+                                
                                 <div class="col-6">
-                                    <label for="address" class="l-address">
-                                        <input type="date" id="date" class="address">
-                                    </label>
+                                    
+                                    <div class="out-date getDate">1-1-2020</div>
+                                    <input type="date" id="date" class="bg-dark-on in-date">
                                 </div>
                                 <div class="col-6">
-                                    <label for="address" class="l-address">
-                                        <input type="date" id="date2" class="address">
-                                    </label>
+                                    <div class="out-date out-date-fix getDate2">1-1-2021</div>
+                                    <input type="date" id="date2" class="bg-dark-on in-date2">
                                 </div>
+                                <div class="gap-sm"></div>
+                                <div class="gap-sm"></div>
                             </div>
                             <div class="gap-xs"></div>
                             <div class="row">
+                                <div class="bg-outside d-none"></div>
                                 <div class="col-8">
                                     <div class="room-option">
+                                        
                                         <div class="">
+                                            
                                             <span class="dropdown-toggle my-btn text-left dropdownMenuLink">
                                                 <div class="img-wrap">
                                                     <img src="image/icon/group.png" alt="">
@@ -1274,7 +1323,7 @@
                             </div>
                             <div class="gap-xs"></div>
                             <div class="gap-xs"></div>
-                            <div class="checkbox text-left">
+                            <div class="checkbox text-left bg-dark-on">
                                 <span class="sm-title">Máy bay + K.sạn</span>
                                 <label for="check0">
                                     <input type="checkbox" id="check0">
@@ -1282,18 +1331,17 @@
                                 </label>
                             </div>
                             <div class="gap-xs"></div>
-                            <div class="bg-history text-left dropdownMenuLink">
+                            <div class="bg-history text-left bg-dark-on">
                                 <button type="button" class="c-main">
                                     <img src="image/icon/Icon awesome-history.png" alt="">
                                     Khách sạn đã xem gần đây
                                     <i class="fa fa-times icon"></i>
                                 </button>
-                                
-                                <div class=" my-toggle toggle-history d-none">
+                                <div class="toggle-history">
                                     <ul>
-                                        <li><a href="#">Khách sạn 1</a></li>
-                                        <li><a href="#">Khách sạn 1</a></li>
-                                        <li><a href="#">Khách sạn 1</a></li>
+                                        <li><a href="#" class="d-block">Khách sạn 1</a></li>
+                                        <li><a href="#" class="d-block">Khách sạn 1</a></li>
+                                        <li><a href="#" class="d-block">Khách sạn 1</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1984,8 +2032,11 @@
 </html>
 <script src="bootstrap/js/jquery-3.4.1.min.js"></script>
 <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+
 <script src="component/search-form-home/script.js"></script>
 <script src="component/slider-basic/script.js"></script>

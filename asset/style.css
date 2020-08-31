@@ -47,6 +47,9 @@ h1, h2, h3, h4, h5, h6{
 .mg-pd-none{
     padding: 0;
 }
+.flarge-size{
+    font-size: 25px!important;
+}
 .large-size{
     font-size: 30px!important;
 }
