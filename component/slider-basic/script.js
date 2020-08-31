@@ -1,6 +1,10 @@
 $(document).ready(function(){
     $('#num0').owlCarousel({
     loop:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplaySpeed:1000,
+    autoplayHoverPause:true,
     margin:0,
     nav:true,
     navText:['<span>&#x3008;</span>','<span>&#x3009;</span>'],
