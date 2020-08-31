@@ -272,32 +272,63 @@
                                         </div>
                                     </div>
                                     <div class="gap-xs"></div>
-                                    <div class="bg-w">
+                                    <button type="button" class="bg-w result-select result-mobile border-0 dropdownMenuLink" id="result-select">
                                         <div class="gap-xs"></div>
                                         <span class="c-dark mr-2">
-                                            <span class="c-main">1</span>
-                                            <small>Phòng</small>
+                                            <span class="c-main num-room">1</span>
+                                            <span>Phòng</span>
                                         </span>
                                         <span class="c-dark mr-2">
-                                            <span class="c-main">2</span>
-                                            <small>Người lớn</small>
+                                            <span class="c-main num-user">2</span>
+                                            <span>Người lớn</span>
                                         </span>
                                         <span class="c-dark mr-2">
-                                            <span class="c-main">0</span>
-                                            <small>Trẻ em</small>
+                                            <span class="c-main num-child">0</span>
+                                            <span>Trẻ em</span>
                                         </span>
                                         <div class="gap-xs"></div>
+                                    </button>
+                                    <div  class="opt-menu-wrap opt-menu-wrap-mobile my-toggle d-none">
+                                        <ul>
+                                            <li>
+                                                <div class="setup-select-child text-center">
+                                                    <div class="down">-</div>
+                                                    <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                    <span>phòng</span>
+                                                    <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                </div>
+                                                <div class="setup-select-user text-center">
+                                                    <div class="down">-</div>
+                                                    <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                    <span>người lớn</span>
+                                                    <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                </div>
+                                                <div class="setup-select-room text-center">
+                                                    <div class="down">-</div>
+                                                    <span class="num-result" direct=".num-child" value='0'>0</span>
+                                                    <span>trẻ em</span>
+                                                    <div class="up" id="btn-up" direct=".num-child">+</div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="gap-xs"></div>
                                     <a href="#" class="btn-submit">Tìm</a>
                                 
-                                    <label for="user1" class="l-address del-border">
-                                        <select name="" id="user1" class="address c-main-light border-0 small-size">
-                                            <option value="">Khách sạn đã xem gần đây</option>
-                                            <option value="">1 adult</option>
-                                        </select>
-                                        <img src="image/icon/Icon awesome-history.png" alt="">
-                                    </label>
+                                    <div class="bg-history text-left dropdownMenuLink">
+                                        <button type="button" class="c-main small-size">
+                                            <img src="image/icon/Icon awesome-history.png" alt="">
+                                            Khách sạn đã xem gần đây
+                                            <i class="fa fa-times icon"></i>
+                                        </button>
+                                        
+                                        <div class=" my-toggle toggle-history d-none">
+                                            <ul>
+                                                <li><a href="#">Khách sạn 1</a></li>
+                                                <li><a href="#">Khách sạn 1</a></li>
+                                                <li><a href="#">Khách sạn 1</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </form>
                                 <a href="#" class="b-main-dark d-block">
                                     <div class="row align-items-center p-2">
@@ -345,32 +376,63 @@
                                         </div>
                                     </div>
                                     <div class="gap-xs"></div>
-                                    <div class="bg-w">
+                                    <button type="button" class="bg-w result-select result-mobile border-0 dropdownMenuLink" id="result-select">
                                         <div class="gap-xs"></div>
                                         <span class="c-dark mr-2">
-                                            <span class="c-main">1</span>
-                                            <small>Phòng</small>
+                                            <span class="c-main num-room">1</span>
+                                            <span>Phòng</span>
                                         </span>
                                         <span class="c-dark mr-2">
-                                            <span class="c-main">2</span>
-                                            <small>Người lớn</small>
+                                            <span class="c-main num-user">2</span>
+                                            <span>Người lớn</span>
                                         </span>
                                         <span class="c-dark mr-2">
-                                            <span class="c-main">0</span>
-                                            <small>Trẻ em</small>
+                                            <span class="c-main num-child">0</span>
+                                            <span>Trẻ em</span>
                                         </span>
                                         <div class="gap-xs"></div>
+                                    </button>
+                                    <div  class="opt-menu-wrap opt-menu-wrap-mobile my-toggle d-none">
+                                        <ul>
+                                            <li>
+                                                <div class="setup-select-child text-center">
+                                                    <div class="down">-</div>
+                                                    <span class="num-result" direct=".num-room" value='1'>1</span>
+                                                    <span>phòng</span>
+                                                    <div class="up" id="btn-up" direct=".num-room">+</div>
+                                                </div>
+                                                <div class="setup-select-user text-center">
+                                                    <div class="down">-</div>
+                                                    <span class="num-result" direct=".num-user" value='2'>2</span>
+                                                    <span>người lớn</span>
+                                                    <div class="up" id="btn-up" direct=".num-user">+</div>
+                                                </div>
+                                                <div class="setup-select-room text-center">
+                                                    <div class="down">-</div>
+                                                    <span class="num-result" direct=".num-child" value='0'>0</span>
+                                                    <span>trẻ em</span>
+                                                    <div class="up" id="btn-up" direct=".num-child">+</div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="gap-xs"></div>
                                     <a href="#" class="btn-submit">Tìm</a>
                                 
-                                    <label for="user1" class="l-address del-border">
-                                        <select name="" id="user1" class="address c-main-light border-0 small-size">
-                                            <option value="">Khách sạn đã xem gần đây</option>
-                                            <option value="">1 adult</option>
-                                        </select>
-                                        <img src="image/icon/Icon awesome-history.png" alt="">
-                                    </label>
+                                    <div class="bg-history text-left dropdownMenuLink">
+                                        <button type="button" class="c-main small-size">
+                                            <img src="image/icon/Icon awesome-history.png" alt="">
+                                            Khách sạn đã xem gần đây
+                                            <i class="fa fa-times icon"></i>
+                                        </button>
+                                        
+                                        <div class=" my-toggle toggle-history d-none">
+                                            <ul>
+                                                <li><a href="#">Khách sạn 1</a></li>
+                                                <li><a href="#">Khách sạn 1</a></li>
+                                                <li><a href="#">Khách sạn 1</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </form>
                                 <a href="#" class="b-main-dark d-block">
                                     <div class="row align-items-center p-2">
@@ -1927,23 +1989,3 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
 <script src="component/search-form-home/script.js"></script>
 <script src="component/slider-basic/script.js"></script>
-
-<script>
-$('#num4').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    dots:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        991:{
-            items:3
-        }
-    }
-})
-</script>
