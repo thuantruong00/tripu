@@ -252,7 +252,16 @@ z-index: 99;
 }
 .my-toggle{
     opacity: 1;
-    animation: animateToggle 0.7s;
+    -webkit-animation: animateToggle 0.7s;
+            animation: animateToggle 0.7s;
+}
+@-webkit-keyframes animateToggle{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 @keyframes animateToggle{
     from{
@@ -287,7 +296,8 @@ z-index: 99;
 .room-option .img-wrap img{
     display: block;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .room-option .img-wrap::before {
     content: '';
@@ -367,7 +377,8 @@ z-index: 99;
     left: 96%;
     top: 0;
     z-index: 0;
-    animation: toRight 0.4s;
+    -webkit-animation: toRight 0.4s;
+            animation: toRight 0.4s;
 }
 .opt-menu-wrap .content{
     padding-right: 30px;
@@ -409,6 +420,14 @@ z-index: 99;
 .check2{
     position: absolute;
     bottom: 0;
+}
+@-webkit-keyframes toRight{
+    from{
+        left: 85%;
+    }
+    to{
+        left: 96%;
+    }
 }
 @keyframes toRight{
     from{
@@ -485,12 +504,22 @@ z-index: 99;
         margin: 0;
     }
     .opt-menu-wrap-mobile{
-        animation: none;
+        -webkit-animation: none;
+                animation: none;
     }
     .opt-menu-wrap-mobile ul{
         display:block;
         right: 0;
-        animation: toLeft 0.7s;
+        -webkit-animation: toLeft 0.7s;
+                animation: toLeft 0.7s;
+    }
+    @-webkit-keyframes toLeft{
+        from{
+            width: 50vw;
+        }
+        to{
+            width: 100vw;
+        }
     }
     @keyframes toLeft{
         from{

@@ -36,7 +36,8 @@
 .logo-wrap img{
     display: block;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .logo-wrap{
     display: inline-block;

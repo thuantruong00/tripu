@@ -49,7 +49,8 @@
 .sub-menu{
     position: absolute;
     top: 40px;
-    animation: toTop 0.4s;
+    -webkit-animation: toTop 0.4s;
+            animation: toTop 0.4s;
     z-index: 100;
     padding-top: 30px;
 }
@@ -79,6 +80,14 @@
     text-decoration: none;
     font-weight: 600;
     background: #ECEDED;
+}
+@-webkit-keyframes toTop{
+    from{
+        top: 50px;
+    }
+    to{
+        top: 40px;
+    }
 }
 @keyframes toTop{
     from{

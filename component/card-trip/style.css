@@ -35,10 +35,12 @@
 .line-through{
     display: inline;
     font-size: 8px;
-    text-decoration-line: line-through;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
 }
 .card-img-top{
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
 }
 
