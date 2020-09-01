@@ -493,11 +493,14 @@ z-index: 99;
     z-index: 0;
 }
 @media only screen and (max-width:991px){
+    .out-date{
+        padding-left: 12px;
+    }
     .img-calendar{
         position: absolute;
-    z-index: 9999;
+    z-index: 999;
     width: 24px;
-    left: 7px;
+    left: 5px;
     top: 16px;
     }
     input[type=date]{
