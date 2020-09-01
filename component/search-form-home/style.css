@@ -97,7 +97,6 @@
 .in-date::-webkit-calendar-picker-indicator{ 
     background-image: url('../../image/calendar.png');
     background-size:20px 20px;
-    width: 0%;
     background-position:5px center;
 }
 .in-date::-webkit-calendar-picker-indicator { 
@@ -117,6 +116,7 @@ input[type=date]{
   width: 100%;
 }
 .in-date::-webkit-datetime-edit-text {
+    width: 0;
 }
 .out-date{
     position: absolute;
@@ -169,7 +169,7 @@ z-index: 99;
     }
     .in-date::-webkit-calendar-picker-indicator,
     .in-date2::-webkit-calendar-picker-indicator{
-        border: 1px solid #fff;
+        border: none;
         left: -25px;
     }
     .gap-sm-fix{
@@ -493,6 +493,11 @@ z-index: 99;
     z-index: 0;
 }
 @media only screen and (max-width:991px){
+
+    .getDate::before{
+        opacity: 0;
+    }
+    /*--------------------*/
     .result-mobile{
         width: 100%;
         margin: 0;
