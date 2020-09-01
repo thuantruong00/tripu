@@ -493,14 +493,14 @@ z-index: 99;
     z-index: 0;
 }
 @media only screen and (max-width:991px){
-    .getDate{
-        
+    .out-date{
         color: red;
+        border: 1px solid red;
     }
-    .getDate::before{
-        
-        opacity: 0;
+    .in-date::-webkit-calendar-picker-indicator{
+        background: green;
     }
+    
     /*--------------------*/
     .result-mobile{
         width: 100%;
