@@ -496,6 +496,10 @@ z-index: 99;
     .out-date{
         color: red;
         border: 1px solid red;
+        
+    }
+    .getDate{
+        opacity: 0;
     }
     .in-date::-webkit-calendar-picker-indicator{
         background: green;
