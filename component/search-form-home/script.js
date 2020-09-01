@@ -59,16 +59,22 @@ $(document).ready(function(){
 
         $('input[type="date"]#date').change(function(){
             console.log(this.value);
-            temp = this.value;
-            arr = temp.split('-');
-            res = arr[2]+'-'+arr[1]+'-'+arr[0];
-            $('.getDate').text(res);
+            if(this.value){
+                temp = this.value;
+                arr = temp.split('-');
+                res = arr[2]+'-'+arr[1]+'-'+arr[0];
+                $('.getDate').text(res);
+            }
+
         });
         $('input[type="date"]#date2').change(function(){
             console.log(this.value);
-            temp = this.value;
-            arr = temp.split('-');
-            res = arr[2]+'-'+arr[1]+'-'+arr[0];
-            $('.getDate2').text(res);
+            if(this.value){
+                temp = this.value;
+                arr = temp.split('-');
+                res = arr[2]+'-'+arr[1]+'-'+arr[0];
+                $('.getDate2').text(res);
+            }
+
         });
 })
