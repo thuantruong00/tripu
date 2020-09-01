@@ -498,9 +498,9 @@ z-index: 99;
         border: 1px solid red;
         
     }
-    .getDate{
-        opacity: 0;
-    }
+    
+    #date::-webkit-datetime-edit-text { color:#fff}
+   
     .in-date::-webkit-calendar-picker-indicator{
         background: green;
     }
