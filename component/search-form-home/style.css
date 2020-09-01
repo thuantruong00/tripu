@@ -498,6 +498,9 @@ z-index: 99;
         border: 1px solid red;
         
     }
+    .in-date{
+        opacity: 0;
+    }
 
     #date::-webkit-datetime-edit-text { color:#fff!important;}
    ::-webkit-datetime-edit-text { color:#fff!important;}
