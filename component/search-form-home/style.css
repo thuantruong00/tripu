@@ -493,26 +493,23 @@ z-index: 99;
     z-index: 0;
 }
 @media only screen and (max-width:991px){
-    .out-date{
-        color: red;
-        border: 1px solid red;
-        
+    .img-calendar{
+        position: absolute;
+    z-index: 9999;
+    width: 24px;
+    left: 7px;
+    top: 16px;
     }
     input[type=date]{
         opacity: 0;
     }
 
     #date::-webkit-datetime-edit-text { color:#fff!important;}
-   ::-webkit-datetime-edit-text { color:#fff!important;}
-::-webkit-datetime-edit-month-field { color:#fff!important; }
-::-webkit-datetime-edit-day-field { color: #fff!important; }
-::-webkit-datetime-edit-year-field { color:#fff!important; }
     .in-date::-webkit-calendar-picker-indicator{
         background: green;
     }
-    .in-date{
-        height: 100px;
-        border: 1px solid blue!important;
+    .in-date, .in-date2{
+        height: 54px;
     }
     
     /*--------------------*/
