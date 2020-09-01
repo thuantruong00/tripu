@@ -498,9 +498,12 @@ z-index: 99;
         border: 1px solid red;
         
     }
-    
+
     #date::-webkit-datetime-edit-text { color:#fff}
-   
+   ::-webkit-datetime-edit-text { color:#fff}
+::-webkit-datetime-edit-month-field { color:#fff }
+::-webkit-datetime-edit-day-field { color: #fff }
+::-webkit-datetime-edit-year-field { color:#fff; }
     .in-date::-webkit-calendar-picker-indicator{
         background: green;
     }
