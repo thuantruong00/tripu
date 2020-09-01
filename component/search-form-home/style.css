@@ -498,7 +498,7 @@ z-index: 99;
         border: 1px solid red;
         
     }
-    .in-date{
+    input[type=date]{
         opacity: 0;
     }
 
